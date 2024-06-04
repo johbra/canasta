@@ -1,1 +1,0 @@
-{:browser-repl true, :output-dir "cljs-out", :main demo.static-website, :output-to "cljs-out/main.js", :aot-cache true}
