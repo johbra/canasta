@@ -13,9 +13,9 @@ body {
 }
 
 .site__title {
-  font-size: 100px;
-  width: 50%;
-  text-align: center;
+    font-size: 50px;
+    width: 50%;
+    text-align: center;
 }
 
 .site__title-text {
