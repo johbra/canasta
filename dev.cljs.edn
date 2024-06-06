@@ -1,1 +1,2 @@
-{:main demo.core}
+{:main demo.core
+ :asset-path "/cljs-out/dev"}
