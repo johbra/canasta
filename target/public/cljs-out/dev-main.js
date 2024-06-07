@@ -1,4 +1,4 @@
-window.CLOSURE_UNCOMPILED_DEFINES = {"figwheel.repl.connect_url":"ws:\/\/localhost:9500\/figwheel-connect?fwprocess=4dc01c&fwbuild=dev"};
+window.CLOSURE_UNCOMPILED_DEFINES = {"figwheel.repl.connect_url":"ws:\/\/localhost:9500\/figwheel-connect?fwprocess=c3b1c6&fwbuild=dev"};
 window.CLOSURE_NO_DEPS = true;
 if(typeof goog == "undefined") document.write('<script src="cljs-out/dev/goog/base.js"></script>');
 document.write('<script src="cljs-out/dev/goog/deps.js"></script>');
@@ -10,4 +10,4 @@ document.write('<script>goog.require("figwheel.repl.preload");</script>');
 document.write('<script>goog.require("devtools.preload");</script>');
 document.write('<script>goog.require("figwheel.main.system_exit");</script>');
 document.write('<script>goog.require("process.env");</script>');
-document.write('<script>goog.require("demo.core");</script>');
+document.write('<script>goog.require("canasta.core");</script>');

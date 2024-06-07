@@ -140,5 +140,5 @@ goog.addDependency("../devtools/core.js", ['devtools.core'], ['devtools.toolbox'
 goog.addDependency("../figwheel/repl/preload.js", ['figwheel.repl.preload'], ['cljs.core', 'figwheel.repl']);
 goog.addDependency("events/eventhandler.js", ['goog.events.EventHandler'], ['goog.Disposable', 'goog.events', 'goog.object']);
 goog.addDependency("../devtools/preload.js", ['devtools.preload'], ['cljs.core', 'devtools.core', 'devtools.prefs']);
+goog.addDependency("../canasta/core.js", ['canasta.core'], ['cljs.core']);
 goog.addDependency("../demo/static_website.js", ['demo.static_website'], ['cljs.core']);
-goog.addDependency("../demo/core.js", ['demo.core'], ['cljs.core']);
