@@ -219,7 +219,6 @@ goog.addDependency("../re_com/dropdown.js", ['re_com.dropdown'], ['re_com.debug'
 goog.addDependency("../re_com/splits.js", ['re_com.splits'], ['re_com.debug', 're_com.util', 're_com.box', 'reagent.core', 'cljs.core', 're_com.validate', 're_com.config']);
 goog.addDependency("../re_com/modal_panel.js", ['re_com.modal_panel'], ['re_com.debug', 'cljs.core', 're_com.validate', 're_com.config']);
 goog.addDependency("../re_com/core.js", ['re_com.core'], ['re_com.debug', 're_com.multi_select', 're_com.popover', 're_com.text', 're_com.box', 'cljs.core', 're_com.slider', 're_com.v_table', 're_com.typeahead', 're_com.tabs', 're_com.close_button', 're_com.throbber', 're_com.alert', 're_com.datepicker', 're_com.progress_bar', 're_com.input_time', 're_com.simple_v_table', 're_com.buttons', 're_com.checkbox', 're_com.tour', 're_com.input_text', 're_com.selection_list', 're_com.tag_dropdown', 're_com.dropdown', 're_com.splits', 're_com.modal_panel', 're_com.radio_button']);
-goog.addDependency("../cljs_time/local.js", ['cljs_time.local'], ['cljs.core', 'cljs_time.core', 'cljs_time.coerce', 'cljs_time.format', 'goog.date.DateTime']);
 goog.addDependency("../re_frame/interop.js", ['re_frame.interop'], ['reagent.ratom', 'reagent.core', 'cljs.core', 'goog.events', 'goog.async.nextTick']);
 goog.addDependency("../re_frame/loggers.js", ['re_frame.loggers'], ['cljs.core', 'clojure.set']);
 goog.addDependency("../re_frame/trace.js", ['re_frame.trace'], ['re_frame.interop', 'goog.functions', 'cljs.core', 're_frame.loggers']);
@@ -235,6 +234,10 @@ goog.addDependency("../re_frame/cofx.js", ['re_frame.cofx'], ['re_frame.intercep
 goog.addDependency("../re_frame/std_interceptors.js", ['re_frame.std_interceptors'], ['re_frame.interceptor', 're_frame.trace', 're_frame.settings', 'cljs.core', 're_frame.utils', 're_frame.loggers', 're_frame.cofx', 'clojure.data', 're_frame.db']);
 goog.addDependency("../re_frame/subs.js", ['re_frame.subs'], ['re_frame.interop', 're_frame.trace', 're_frame.registrar', 'cljs.core', 're_frame.utils', 're_frame.loggers', 're_frame.db']);
 goog.addDependency("../re_frame/core.js", ['re_frame.core'], ['re_frame.interop', 're_frame.interceptor', 're_frame.events', 're_frame.settings', 're_frame.fx', 're_frame.registrar', 'cljs.core', 're_frame.router', 're_frame.utils', 'clojure.set', 're_frame.std_interceptors', 're_frame.loggers', 're_frame.subs', 're_frame.cofx', 're_frame.db']);
-goog.addDependency("../canasta/views.js", ['canasta.views'], ['re_com.core', 'reagent.core', 'cljs.core', 'cljs_time.core', 'cljs_time.local', 're_frame.core']);
+goog.addDependency("../canasta/subs.js", ['canasta.subs'], ['cljs.core', 're_frame.core']);
+goog.addDependency("../cljs_time/local.js", ['cljs_time.local'], ['cljs.core', 'cljs_time.core', 'cljs_time.coerce', 'cljs_time.format', 'goog.date.DateTime']);
+goog.addDependency("../canasta/spieler.js", ['canasta.spieler'], ['cljs.core']);
+goog.addDependency("../canasta/spiel.js", ['canasta.spiel'], ['cljs.core', 'canasta.spieler']);
+goog.addDependency("../canasta/views.js", ['canasta.views'], ['re_com.core', 'canasta.subs', 'reagent.core', 'cljs.core', 'cljs_time.core', 'cljs_time.local', 'canasta.spieler', 'canasta.spiel', 're_frame.core']);
 goog.addDependency("../canasta/core.js", ['canasta.core'], ['canasta.views', 'cljs.core', 're_frame.core', 'reagent.dom']);
 goog.addDependency("../demo/static_website.js", ['demo.static_website'], ['cljs.core']);

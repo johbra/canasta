@@ -1,10 +1,10 @@
 (ns canasta.views
   (:require [re-frame.core :as rf]
             [reagent.core :as reagent]
-            ;; [canastref.subs]
+            [canasta.subs]
             ;; [canastref.events] 
-            ;; [canastref.spiel :as sp]
-            ;; [canastref.spieler :as s] 
+            [canasta.spiel :as sp]
+            [canasta.spieler :as s] 
             [re-com.core :refer [v-box h-box box gap button title alert-box
                                  scroller label input-text single-dropdown]]
             [cljs-time.local :as l]
@@ -215,10 +215,10 @@
                                    (s/spieler-name (sp/sieger spiel)))]))]]]])))))
 
 (defn main-panel []
-  (let [historie    nil   ;; @(rf/subscribe [:historie])
-                                        ; monatshistorie @(rf/subscribe [:monatshistorie])
-                                        ;monatsbilanz   @(rf/subscribe [:monatsbilanz])
-        spieler-namen nil ;; @(rf/subscribe [:spieler-namen])
+  (let [historie @(rf/subscribe [:historie])
+        monatshistorie @(rf/subscribe [:monatshistorie])
+        monatsbilanz   @(rf/subscribe [:monatsbilanz])
+        spieler-namen  @(rf/subscribe [:spieler-namen])
         ] 
     (if (and historie spieler-namen)
       [h-box :children
