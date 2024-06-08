@@ -1,29 +1,27 @@
-:root {
-  --color-purple: rgba(197, 18, 193, 1);
-  --color-pink: rgba(241, 50, 50, 1);
-}
+/* style */
 
-body {
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  font-family: Arial;
-  align-items: center;
-  justify-content: center;
-}
+body { background-color: #eaede9; 
+       color: #002842;
+       font-size: 22px;
+       line-height: 1.5;
+       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+       }
 
-.site__title {
-    font-size: 50px;
-    width: 50%;
+.rTableHead
+{background-color: #DDD; font-weight: bold; margin-left: 2px ; } 
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
     text-align: center;
+    font-size: 18px;
+    margin: 1px 1px ;
+    height: 36px;
 }
 
-.site__title-text {
-  background: -webkit-linear-gradient(
-    34deg,
-    var(--color-purple),
-    var(--color-pink)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+.gewinner { position: relative; top: -5%; left: 40%; 
+            font-size: 24px; font-weight: bold; }
+
+.form-control {font-size: 18px;}
+.rc-input-text-field  {height: 36px;}

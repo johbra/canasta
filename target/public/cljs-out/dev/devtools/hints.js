@@ -100,27 +100,27 @@ devtools.hints.error_object_sense = (function devtools$hints$error_object_sense(
 try{var native_stack_trace = error.stack;
 var stack_trace = devtools.hints.parse_stacktrace.call(null,native_stack_trace);
 var top_item = cljs.core.second.call(null,stack_trace);
-var map__12427 = top_item;
-var map__12427__$1 = cljs.core.__destructure_map.call(null,map__12427);
-var file = cljs.core.get.call(null,map__12427__$1,new cljs.core.Keyword(null,"file","file",-1269645878));
-var line = cljs.core.get.call(null,map__12427__$1,new cljs.core.Keyword(null,"line","line",212345235));
-var column = cljs.core.get.call(null,map__12427__$1,new cljs.core.Keyword(null,"column","column",2078222095));
+var map__17369 = top_item;
+var map__17369__$1 = cljs.core.__destructure_map.call(null,map__17369);
+var file = cljs.core.get.call(null,map__17369__$1,new cljs.core.Keyword(null,"file","file",-1269645878));
+var line = cljs.core.get.call(null,map__17369__$1,new cljs.core.Keyword(null,"line","line",212345235));
+var column = cljs.core.get.call(null,map__17369__$1,new cljs.core.Keyword(null,"column","column",2078222095));
 return devtools.hints.make_sense_of_the_error.call(null,error.message,file,line,column);
-}catch (e12426){var _e = e12426;
+}catch (e17368){var _e = e17368;
 return false;
 }});
 devtools.hints.type_error_to_string = (function devtools$hints$type_error_to_string(self){
-var temp__5455__auto___12428 = devtools.hints.get_processed_errors_BANG_.call(null);
-if(cljs.core.truth_(temp__5455__auto___12428)){
-var seen_errors_12429 = temp__5455__auto___12428;
-if(cljs.core.truth_(seen_errors_12429.has(self))){
+var temp__5455__auto___17370 = devtools.hints.get_processed_errors_BANG_.call(null);
+if(cljs.core.truth_(temp__5455__auto___17370)){
+var seen_errors_17371 = temp__5455__auto___17370;
+if(cljs.core.truth_(seen_errors_17371.has(self))){
 } else {
-seen_errors_12429.add(self);
+seen_errors_17371.add(self);
 
-var temp__5457__auto___12430 = devtools.hints.error_object_sense.call(null,self);
-if(cljs.core.truth_(temp__5457__auto___12430)){
-var sense_12431 = temp__5457__auto___12430;
-(self.message = [cljs.core.str.cljs$core$IFn$_invoke$arity$1(self.message),", a sanity hint:\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(sense_12431)].join(''));
+var temp__5457__auto___17372 = devtools.hints.error_object_sense.call(null,self);
+if(cljs.core.truth_(temp__5457__auto___17372)){
+var sense_17373 = temp__5457__auto___17372;
+(self.message = [cljs.core.str.cljs$core$IFn$_invoke$arity$1(self.message),", a sanity hint:\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(sense_17373)].join(''));
 } else {
 }
 }
