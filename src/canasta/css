@@ -1,0 +1,27 @@
+/* style */
+
+body { background-color: #eaede9; 
+       color: #002842;
+       font-size: 22px;
+       line-height: 1.5;
+       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+       }
+
+.rTableHead
+{background-color: #DDD; font-weight: bold; margin-left: 2px ; } 
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    margin: 1px 1px ;
+    height: 36px;
+}
+
+.gewinner { position: relative; top: -5%; left: 40%; 
+            font-size: 24px; font-weight: bold; }
+
+.form-control {font-size: 18px;}
+.rc-input-text-field  {height: 36px;}
