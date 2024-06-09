@@ -2,7 +2,7 @@
   (:require [re-frame.core :as rf]
             [reagent.core :as reagent]
             [canasta.subs]
-            ;; [canastref.events] 
+            [canasta.events] 
             [canasta.spiel :as sp]
             [canasta.spieler :as s] 
             [re-com.core :refer [v-box h-box box gap button title alert-box
