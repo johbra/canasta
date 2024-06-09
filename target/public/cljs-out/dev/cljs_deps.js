@@ -278,5 +278,5 @@ goog.addDependency("../canasta/spiel.js", ['canasta.spiel'], ['cljs.core', 'cana
 goog.addDependency("../medley/core.js", ['medley.core'], ['cljs.core']);
 goog.addDependency("../canasta/events.js", ['canasta.events'], ['cljs.core', 'cljs_time.core', 'cljs_time.local', 'canasta.spieler', 'canasta.db', 'canasta.drop_file_stream', 'canasta.spiel', 're_frame.core', 'medley.core']);
 goog.addDependency("../canasta/views.js", ['canasta.views'], ['re_com.core', 'canasta.subs', 'canasta.events', 'reagent.core', 'cljs.core', 'cljs_time.core', 'cljs_time.local', 'canasta.spieler', 'canasta.spiel', 're_frame.core']);
-goog.addDependency("../canasta/core.js", ['canasta.core'], ['canasta.views', 'cljs.core', 're_frame.core', 'reagent.dom']);
+goog.addDependency("../canasta/core.js", ['canasta.core'], ['canasta.views', 'canasta.events', 'cljs.core', 're_frame.core', 'reagent.dom']);
 goog.addDependency("../demo/static_website.js", ['demo.static_website'], ['cljs.core']);
