@@ -17,21 +17,21 @@ re_com.buttons.button_args_desc = ((re_com.config.include_args_desc_QMARK_)?new 
 re_com.buttons.button = (function re_com$buttons$button(){
 var showing_QMARK_ = reagent.core.atom.call(null,false);
 return (function() { 
-var G__16802__delegate = function (p__16800){
-var map__16801 = p__16800;
-var map__16801__$1 = cljs.core.__destructure_map.call(null,map__16801);
-var args = map__16801__$1;
-var disabled_QMARK_ = cljs.core.get.call(null,map__16801__$1,new cljs.core.Keyword(null,"disabled?","disabled?",-1523234181));
-var tooltip = cljs.core.get.call(null,map__16801__$1,new cljs.core.Keyword(null,"tooltip","tooltip",-1809677058));
-var attr = cljs.core.get.call(null,map__16801__$1,new cljs.core.Keyword(null,"attr","attr",-604132353));
-var parts = cljs.core.get.call(null,map__16801__$1,new cljs.core.Keyword(null,"parts","parts",849007691));
-var src = cljs.core.get.call(null,map__16801__$1,new cljs.core.Keyword(null,"src","src",-1651076051));
-var on_click = cljs.core.get.call(null,map__16801__$1,new cljs.core.Keyword(null,"on-click","on-click",1632826543));
-var style = cljs.core.get.call(null,map__16801__$1,new cljs.core.Keyword(null,"style","style",-496642736));
-var debug_as = cljs.core.get.call(null,map__16801__$1,new cljs.core.Keyword(null,"debug-as","debug-as",283322354));
-var label = cljs.core.get.call(null,map__16801__$1,new cljs.core.Keyword(null,"label","label",1718410804));
-var class$ = cljs.core.get.call(null,map__16801__$1,new cljs.core.Keyword(null,"class","class",-2030961996),"btn-default");
-var tooltip_position = cljs.core.get.call(null,map__16801__$1,new cljs.core.Keyword(null,"tooltip-position","tooltip-position",936197013));
+var G__22854__delegate = function (p__22852){
+var map__22853 = p__22852;
+var map__22853__$1 = cljs.core.__destructure_map.call(null,map__22853);
+var args = map__22853__$1;
+var disabled_QMARK_ = cljs.core.get.call(null,map__22853__$1,new cljs.core.Keyword(null,"disabled?","disabled?",-1523234181));
+var tooltip = cljs.core.get.call(null,map__22853__$1,new cljs.core.Keyword(null,"tooltip","tooltip",-1809677058));
+var attr = cljs.core.get.call(null,map__22853__$1,new cljs.core.Keyword(null,"attr","attr",-604132353));
+var parts = cljs.core.get.call(null,map__22853__$1,new cljs.core.Keyword(null,"parts","parts",849007691));
+var src = cljs.core.get.call(null,map__22853__$1,new cljs.core.Keyword(null,"src","src",-1651076051));
+var on_click = cljs.core.get.call(null,map__22853__$1,new cljs.core.Keyword(null,"on-click","on-click",1632826543));
+var style = cljs.core.get.call(null,map__22853__$1,new cljs.core.Keyword(null,"style","style",-496642736));
+var debug_as = cljs.core.get.call(null,map__22853__$1,new cljs.core.Keyword(null,"debug-as","debug-as",283322354));
+var label = cljs.core.get.call(null,map__22853__$1,new cljs.core.Keyword(null,"label","label",1718410804));
+var class$ = cljs.core.get.call(null,map__22853__$1,new cljs.core.Keyword(null,"class","class",-2030961996),"btn-default");
+var tooltip_position = cljs.core.get.call(null,map__22853__$1,new cljs.core.Keyword(null,"tooltip-position","tooltip-position",936197013));
 var or__4160__auto__ = (((!(goog.DEBUG)))?null:re_com.validate.validate_args.call(null,re_com.validate.extract_arg_data.call(null,re_com.buttons.button_args_desc),args));
 if(cljs.core.truth_(or__4160__auto__)){
 return or__4160__auto__;
@@ -84,21 +84,21 @@ return new cljs.core.Keyword(null,"below-center","below-center",-2126885397);
 })(),new cljs.core.Keyword(null,"showing?","showing?",2094921488),showing_QMARK_,new cljs.core.Keyword(null,"anchor","anchor",1549638489),the_button,new cljs.core.Keyword(null,"class","class",-2030961996),["rc-button-tooltip ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.get_in.call(null,parts,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"tooltip","tooltip",-1809677058),new cljs.core.Keyword(null,"class","class",-2030961996)], null)))].join(''),new cljs.core.Keyword(null,"style","style",-496642736),cljs.core.get_in.call(null,parts,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"tooltip","tooltip",-1809677058),new cljs.core.Keyword(null,"style","style",-496642736)], null)),new cljs.core.Keyword(null,"attr","attr",-604132353),cljs.core.get_in.call(null,parts,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"tooltip","tooltip",-1809677058),new cljs.core.Keyword(null,"attr","attr",-604132353)], null))], null):the_button)], null);
 }
 };
-var G__16802 = function (var_args){
-var p__16800 = null;
+var G__22854 = function (var_args){
+var p__22852 = null;
 if (arguments.length > 0) {
-var G__16803__i = 0, G__16803__a = new Array(arguments.length -  0);
-while (G__16803__i < G__16803__a.length) {G__16803__a[G__16803__i] = arguments[G__16803__i + 0]; ++G__16803__i;}
-  p__16800 = new cljs.core.IndexedSeq(G__16803__a,0,null);
+var G__22855__i = 0, G__22855__a = new Array(arguments.length -  0);
+while (G__22855__i < G__22855__a.length) {G__22855__a[G__22855__i] = arguments[G__22855__i + 0]; ++G__22855__i;}
+  p__22852 = new cljs.core.IndexedSeq(G__22855__a,0,null);
 } 
-return G__16802__delegate.call(this,p__16800);};
-G__16802.cljs$lang$maxFixedArity = 0;
-G__16802.cljs$lang$applyTo = (function (arglist__16804){
-var p__16800 = cljs.core.seq(arglist__16804);
-return G__16802__delegate(p__16800);
+return G__22854__delegate.call(this,p__22852);};
+G__22854.cljs$lang$maxFixedArity = 0;
+G__22854.cljs$lang$applyTo = (function (arglist__22856){
+var p__22852 = cljs.core.seq(arglist__22856);
+return G__22854__delegate(p__22852);
 });
-G__16802.cljs$core$IFn$_invoke$arity$variadic = G__16802__delegate;
-return G__16802;
+G__22854.cljs$core$IFn$_invoke$arity$variadic = G__22854__delegate;
+return G__22854;
 })()
 ;
 });
@@ -111,23 +111,23 @@ re_com.buttons.md_circle_icon_button_args_desc = ((re_com.config.include_args_de
 re_com.buttons.md_circle_icon_button = (function re_com$buttons$md_circle_icon_button(){
 var showing_QMARK_ = reagent.core.atom.call(null,false);
 return (function() { 
-var re_com$buttons$md_circle_icon_button_$_md_circle_icon_button_render__delegate = function (p__16805){
-var map__16806 = p__16805;
-var map__16806__$1 = cljs.core.__destructure_map.call(null,map__16806);
-var args = map__16806__$1;
-var disabled_QMARK_ = cljs.core.get.call(null,map__16806__$1,new cljs.core.Keyword(null,"disabled?","disabled?",-1523234181));
-var tooltip = cljs.core.get.call(null,map__16806__$1,new cljs.core.Keyword(null,"tooltip","tooltip",-1809677058));
-var attr = cljs.core.get.call(null,map__16806__$1,new cljs.core.Keyword(null,"attr","attr",-604132353));
-var emphasise_QMARK_ = cljs.core.get.call(null,map__16806__$1,new cljs.core.Keyword(null,"emphasise?","emphasise?",1618294247));
-var md_icon_name = cljs.core.get.call(null,map__16806__$1,new cljs.core.Keyword(null,"md-icon-name","md-icon-name",681785863),"zmdi-plus");
-var parts = cljs.core.get.call(null,map__16806__$1,new cljs.core.Keyword(null,"parts","parts",849007691));
-var src = cljs.core.get.call(null,map__16806__$1,new cljs.core.Keyword(null,"src","src",-1651076051));
-var on_click = cljs.core.get.call(null,map__16806__$1,new cljs.core.Keyword(null,"on-click","on-click",1632826543));
-var size = cljs.core.get.call(null,map__16806__$1,new cljs.core.Keyword(null,"size","size",1098693007));
-var style = cljs.core.get.call(null,map__16806__$1,new cljs.core.Keyword(null,"style","style",-496642736));
-var debug_as = cljs.core.get.call(null,map__16806__$1,new cljs.core.Keyword(null,"debug-as","debug-as",283322354));
-var class$ = cljs.core.get.call(null,map__16806__$1,new cljs.core.Keyword(null,"class","class",-2030961996));
-var tooltip_position = cljs.core.get.call(null,map__16806__$1,new cljs.core.Keyword(null,"tooltip-position","tooltip-position",936197013));
+var re_com$buttons$md_circle_icon_button_$_md_circle_icon_button_render__delegate = function (p__22857){
+var map__22858 = p__22857;
+var map__22858__$1 = cljs.core.__destructure_map.call(null,map__22858);
+var args = map__22858__$1;
+var disabled_QMARK_ = cljs.core.get.call(null,map__22858__$1,new cljs.core.Keyword(null,"disabled?","disabled?",-1523234181));
+var tooltip = cljs.core.get.call(null,map__22858__$1,new cljs.core.Keyword(null,"tooltip","tooltip",-1809677058));
+var attr = cljs.core.get.call(null,map__22858__$1,new cljs.core.Keyword(null,"attr","attr",-604132353));
+var emphasise_QMARK_ = cljs.core.get.call(null,map__22858__$1,new cljs.core.Keyword(null,"emphasise?","emphasise?",1618294247));
+var md_icon_name = cljs.core.get.call(null,map__22858__$1,new cljs.core.Keyword(null,"md-icon-name","md-icon-name",681785863),"zmdi-plus");
+var parts = cljs.core.get.call(null,map__22858__$1,new cljs.core.Keyword(null,"parts","parts",849007691));
+var src = cljs.core.get.call(null,map__22858__$1,new cljs.core.Keyword(null,"src","src",-1651076051));
+var on_click = cljs.core.get.call(null,map__22858__$1,new cljs.core.Keyword(null,"on-click","on-click",1632826543));
+var size = cljs.core.get.call(null,map__22858__$1,new cljs.core.Keyword(null,"size","size",1098693007));
+var style = cljs.core.get.call(null,map__22858__$1,new cljs.core.Keyword(null,"style","style",-496642736));
+var debug_as = cljs.core.get.call(null,map__22858__$1,new cljs.core.Keyword(null,"debug-as","debug-as",283322354));
+var class$ = cljs.core.get.call(null,map__22858__$1,new cljs.core.Keyword(null,"class","class",-2030961996));
+var tooltip_position = cljs.core.get.call(null,map__22858__$1,new cljs.core.Keyword(null,"tooltip-position","tooltip-position",936197013));
 var or__4160__auto__ = (((!(goog.DEBUG)))?null:re_com.validate.validate_args.call(null,re_com.validate.extract_arg_data.call(null,re_com.buttons.md_circle_icon_button_args_desc),args));
 if(cljs.core.truth_(or__4160__auto__)){
 return or__4160__auto__;
@@ -137,9 +137,9 @@ if(cljs.core.truth_(tooltip)){
 cljs.core.reset_BANG_.call(null,showing_QMARK_,false);
 }
 
-var the_button = new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),cljs.core.merge.call(null,new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"class","class",-2030961996),["noselect rc-md-circle-icon-button ",cljs.core.str.cljs$core$IFn$_invoke$arity$1((function (){var G__16808 = size;
-var G__16808__$1 = (((G__16808 instanceof cljs.core.Keyword))?G__16808.fqn:null);
-switch (G__16808__$1) {
+var the_button = new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),cljs.core.merge.call(null,new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"class","class",-2030961996),["noselect rc-md-circle-icon-button ",cljs.core.str.cljs$core$IFn$_invoke$arity$1((function (){var G__22860 = size;
+var G__22860__$1 = (((G__22860 instanceof cljs.core.Keyword))?G__22860.fqn:null);
+switch (G__22860__$1) {
 case "smaller":
 return "rc-circle-smaller ";
 
@@ -190,17 +190,17 @@ return new cljs.core.Keyword(null,"below-center","below-center",-2126885397);
 }
 };
 var re_com$buttons$md_circle_icon_button_$_md_circle_icon_button_render = function (var_args){
-var p__16805 = null;
+var p__22857 = null;
 if (arguments.length > 0) {
-var G__16810__i = 0, G__16810__a = new Array(arguments.length -  0);
-while (G__16810__i < G__16810__a.length) {G__16810__a[G__16810__i] = arguments[G__16810__i + 0]; ++G__16810__i;}
-  p__16805 = new cljs.core.IndexedSeq(G__16810__a,0,null);
+var G__22862__i = 0, G__22862__a = new Array(arguments.length -  0);
+while (G__22862__i < G__22862__a.length) {G__22862__a[G__22862__i] = arguments[G__22862__i + 0]; ++G__22862__i;}
+  p__22857 = new cljs.core.IndexedSeq(G__22862__a,0,null);
 } 
-return re_com$buttons$md_circle_icon_button_$_md_circle_icon_button_render__delegate.call(this,p__16805);};
+return re_com$buttons$md_circle_icon_button_$_md_circle_icon_button_render__delegate.call(this,p__22857);};
 re_com$buttons$md_circle_icon_button_$_md_circle_icon_button_render.cljs$lang$maxFixedArity = 0;
-re_com$buttons$md_circle_icon_button_$_md_circle_icon_button_render.cljs$lang$applyTo = (function (arglist__16811){
-var p__16805 = cljs.core.seq(arglist__16811);
-return re_com$buttons$md_circle_icon_button_$_md_circle_icon_button_render__delegate(p__16805);
+re_com$buttons$md_circle_icon_button_$_md_circle_icon_button_render.cljs$lang$applyTo = (function (arglist__22863){
+var p__22857 = cljs.core.seq(arglist__22863);
+return re_com$buttons$md_circle_icon_button_$_md_circle_icon_button_render__delegate(p__22857);
 });
 re_com$buttons$md_circle_icon_button_$_md_circle_icon_button_render.cljs$core$IFn$_invoke$arity$variadic = re_com$buttons$md_circle_icon_button_$_md_circle_icon_button_render__delegate;
 return re_com$buttons$md_circle_icon_button_$_md_circle_icon_button_render;
@@ -216,23 +216,23 @@ re_com.buttons.md_icon_button_args_desc = ((re_com.config.include_args_desc_QMAR
 re_com.buttons.md_icon_button = (function re_com$buttons$md_icon_button(){
 var showing_QMARK_ = reagent.core.atom.call(null,false);
 return (function() { 
-var re_com$buttons$md_icon_button_$_md_icon_button_render__delegate = function (p__16812){
-var map__16813 = p__16812;
-var map__16813__$1 = cljs.core.__destructure_map.call(null,map__16813);
-var args = map__16813__$1;
-var disabled_QMARK_ = cljs.core.get.call(null,map__16813__$1,new cljs.core.Keyword(null,"disabled?","disabled?",-1523234181));
-var tooltip = cljs.core.get.call(null,map__16813__$1,new cljs.core.Keyword(null,"tooltip","tooltip",-1809677058));
-var attr = cljs.core.get.call(null,map__16813__$1,new cljs.core.Keyword(null,"attr","attr",-604132353));
-var emphasise_QMARK_ = cljs.core.get.call(null,map__16813__$1,new cljs.core.Keyword(null,"emphasise?","emphasise?",1618294247));
-var md_icon_name = cljs.core.get.call(null,map__16813__$1,new cljs.core.Keyword(null,"md-icon-name","md-icon-name",681785863),"zmdi-plus");
-var parts = cljs.core.get.call(null,map__16813__$1,new cljs.core.Keyword(null,"parts","parts",849007691));
-var src = cljs.core.get.call(null,map__16813__$1,new cljs.core.Keyword(null,"src","src",-1651076051));
-var on_click = cljs.core.get.call(null,map__16813__$1,new cljs.core.Keyword(null,"on-click","on-click",1632826543));
-var size = cljs.core.get.call(null,map__16813__$1,new cljs.core.Keyword(null,"size","size",1098693007));
-var style = cljs.core.get.call(null,map__16813__$1,new cljs.core.Keyword(null,"style","style",-496642736));
-var debug_as = cljs.core.get.call(null,map__16813__$1,new cljs.core.Keyword(null,"debug-as","debug-as",283322354));
-var class$ = cljs.core.get.call(null,map__16813__$1,new cljs.core.Keyword(null,"class","class",-2030961996));
-var tooltip_position = cljs.core.get.call(null,map__16813__$1,new cljs.core.Keyword(null,"tooltip-position","tooltip-position",936197013));
+var re_com$buttons$md_icon_button_$_md_icon_button_render__delegate = function (p__22864){
+var map__22865 = p__22864;
+var map__22865__$1 = cljs.core.__destructure_map.call(null,map__22865);
+var args = map__22865__$1;
+var disabled_QMARK_ = cljs.core.get.call(null,map__22865__$1,new cljs.core.Keyword(null,"disabled?","disabled?",-1523234181));
+var tooltip = cljs.core.get.call(null,map__22865__$1,new cljs.core.Keyword(null,"tooltip","tooltip",-1809677058));
+var attr = cljs.core.get.call(null,map__22865__$1,new cljs.core.Keyword(null,"attr","attr",-604132353));
+var emphasise_QMARK_ = cljs.core.get.call(null,map__22865__$1,new cljs.core.Keyword(null,"emphasise?","emphasise?",1618294247));
+var md_icon_name = cljs.core.get.call(null,map__22865__$1,new cljs.core.Keyword(null,"md-icon-name","md-icon-name",681785863),"zmdi-plus");
+var parts = cljs.core.get.call(null,map__22865__$1,new cljs.core.Keyword(null,"parts","parts",849007691));
+var src = cljs.core.get.call(null,map__22865__$1,new cljs.core.Keyword(null,"src","src",-1651076051));
+var on_click = cljs.core.get.call(null,map__22865__$1,new cljs.core.Keyword(null,"on-click","on-click",1632826543));
+var size = cljs.core.get.call(null,map__22865__$1,new cljs.core.Keyword(null,"size","size",1098693007));
+var style = cljs.core.get.call(null,map__22865__$1,new cljs.core.Keyword(null,"style","style",-496642736));
+var debug_as = cljs.core.get.call(null,map__22865__$1,new cljs.core.Keyword(null,"debug-as","debug-as",283322354));
+var class$ = cljs.core.get.call(null,map__22865__$1,new cljs.core.Keyword(null,"class","class",-2030961996));
+var tooltip_position = cljs.core.get.call(null,map__22865__$1,new cljs.core.Keyword(null,"tooltip-position","tooltip-position",936197013));
 var or__4160__auto__ = (((!(goog.DEBUG)))?null:re_com.validate.validate_args.call(null,re_com.validate.extract_arg_data.call(null,re_com.buttons.md_icon_button_args_desc),args));
 if(cljs.core.truth_(or__4160__auto__)){
 return or__4160__auto__;
@@ -242,9 +242,9 @@ if(cljs.core.truth_(tooltip)){
 cljs.core.reset_BANG_.call(null,showing_QMARK_,false);
 }
 
-var the_button = new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),cljs.core.merge.call(null,new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"class","class",-2030961996),["noselect rc-md-icon-button ",cljs.core.str.cljs$core$IFn$_invoke$arity$1((function (){var G__16815 = size;
-var G__16815__$1 = (((G__16815 instanceof cljs.core.Keyword))?G__16815.fqn:null);
-switch (G__16815__$1) {
+var the_button = new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),cljs.core.merge.call(null,new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"class","class",-2030961996),["noselect rc-md-icon-button ",cljs.core.str.cljs$core$IFn$_invoke$arity$1((function (){var G__22867 = size;
+var G__22867__$1 = (((G__22867 instanceof cljs.core.Keyword))?G__22867.fqn:null);
+switch (G__22867__$1) {
 case "smaller":
 return "rc-icon-smaller ";
 
@@ -295,17 +295,17 @@ return new cljs.core.Keyword(null,"below-center","below-center",-2126885397);
 }
 };
 var re_com$buttons$md_icon_button_$_md_icon_button_render = function (var_args){
-var p__16812 = null;
+var p__22864 = null;
 if (arguments.length > 0) {
-var G__16817__i = 0, G__16817__a = new Array(arguments.length -  0);
-while (G__16817__i < G__16817__a.length) {G__16817__a[G__16817__i] = arguments[G__16817__i + 0]; ++G__16817__i;}
-  p__16812 = new cljs.core.IndexedSeq(G__16817__a,0,null);
+var G__22869__i = 0, G__22869__a = new Array(arguments.length -  0);
+while (G__22869__i < G__22869__a.length) {G__22869__a[G__22869__i] = arguments[G__22869__i + 0]; ++G__22869__i;}
+  p__22864 = new cljs.core.IndexedSeq(G__22869__a,0,null);
 } 
-return re_com$buttons$md_icon_button_$_md_icon_button_render__delegate.call(this,p__16812);};
+return re_com$buttons$md_icon_button_$_md_icon_button_render__delegate.call(this,p__22864);};
 re_com$buttons$md_icon_button_$_md_icon_button_render.cljs$lang$maxFixedArity = 0;
-re_com$buttons$md_icon_button_$_md_icon_button_render.cljs$lang$applyTo = (function (arglist__16818){
-var p__16812 = cljs.core.seq(arglist__16818);
-return re_com$buttons$md_icon_button_$_md_icon_button_render__delegate(p__16812);
+re_com$buttons$md_icon_button_$_md_icon_button_render.cljs$lang$applyTo = (function (arglist__22870){
+var p__22864 = cljs.core.seq(arglist__22870);
+return re_com$buttons$md_icon_button_$_md_icon_button_render__delegate(p__22864);
 });
 re_com$buttons$md_icon_button_$_md_icon_button_render.cljs$core$IFn$_invoke$arity$variadic = re_com$buttons$md_icon_button_$_md_icon_button_render__delegate;
 return re_com$buttons$md_icon_button_$_md_icon_button_render;
@@ -324,20 +324,20 @@ re_com.buttons.info_button_args_desc = ((re_com.config.include_args_desc_QMARK_)
 re_com.buttons.info_button = (function re_com$buttons$info_button(){
 var showing_QMARK_ = reagent.core.atom.call(null,false);
 return (function() { 
-var re_com$buttons$info_button_$_info_button_render__delegate = function (p__16819){
-var map__16820 = p__16819;
-var map__16820__$1 = cljs.core.__destructure_map.call(null,map__16820);
-var args = map__16820__$1;
-var disabled_QMARK_ = cljs.core.get.call(null,map__16820__$1,new cljs.core.Keyword(null,"disabled?","disabled?",-1523234181));
-var attr = cljs.core.get.call(null,map__16820__$1,new cljs.core.Keyword(null,"attr","attr",-604132353));
-var parts = cljs.core.get.call(null,map__16820__$1,new cljs.core.Keyword(null,"parts","parts",849007691));
-var width = cljs.core.get.call(null,map__16820__$1,new cljs.core.Keyword(null,"width","width",-384071477));
-var src = cljs.core.get.call(null,map__16820__$1,new cljs.core.Keyword(null,"src","src",-1651076051));
-var style = cljs.core.get.call(null,map__16820__$1,new cljs.core.Keyword(null,"style","style",-496642736));
-var debug_as = cljs.core.get.call(null,map__16820__$1,new cljs.core.Keyword(null,"debug-as","debug-as",283322354));
-var class$ = cljs.core.get.call(null,map__16820__$1,new cljs.core.Keyword(null,"class","class",-2030961996));
-var info = cljs.core.get.call(null,map__16820__$1,new cljs.core.Keyword(null,"info","info",-317069002));
-var position = cljs.core.get.call(null,map__16820__$1,new cljs.core.Keyword(null,"position","position",-2011731912));
+var re_com$buttons$info_button_$_info_button_render__delegate = function (p__22871){
+var map__22872 = p__22871;
+var map__22872__$1 = cljs.core.__destructure_map.call(null,map__22872);
+var args = map__22872__$1;
+var disabled_QMARK_ = cljs.core.get.call(null,map__22872__$1,new cljs.core.Keyword(null,"disabled?","disabled?",-1523234181));
+var attr = cljs.core.get.call(null,map__22872__$1,new cljs.core.Keyword(null,"attr","attr",-604132353));
+var parts = cljs.core.get.call(null,map__22872__$1,new cljs.core.Keyword(null,"parts","parts",849007691));
+var width = cljs.core.get.call(null,map__22872__$1,new cljs.core.Keyword(null,"width","width",-384071477));
+var src = cljs.core.get.call(null,map__22872__$1,new cljs.core.Keyword(null,"src","src",-1651076051));
+var style = cljs.core.get.call(null,map__22872__$1,new cljs.core.Keyword(null,"style","style",-496642736));
+var debug_as = cljs.core.get.call(null,map__22872__$1,new cljs.core.Keyword(null,"debug-as","debug-as",283322354));
+var class$ = cljs.core.get.call(null,map__22872__$1,new cljs.core.Keyword(null,"class","class",-2030961996));
+var info = cljs.core.get.call(null,map__22872__$1,new cljs.core.Keyword(null,"info","info",-317069002));
+var position = cljs.core.get.call(null,map__22872__$1,new cljs.core.Keyword(null,"position","position",-2011731912));
 var or__4160__auto__ = (((!(goog.DEBUG)))?null:re_com.validate.validate_args.call(null,re_com.validate.extract_arg_data.call(null,re_com.buttons.info_button_args_desc),args));
 if(cljs.core.truth_(or__4160__auto__)){
 return or__4160__auto__;
@@ -373,17 +373,17 @@ return null;
 }
 };
 var re_com$buttons$info_button_$_info_button_render = function (var_args){
-var p__16819 = null;
+var p__22871 = null;
 if (arguments.length > 0) {
-var G__16821__i = 0, G__16821__a = new Array(arguments.length -  0);
-while (G__16821__i < G__16821__a.length) {G__16821__a[G__16821__i] = arguments[G__16821__i + 0]; ++G__16821__i;}
-  p__16819 = new cljs.core.IndexedSeq(G__16821__a,0,null);
+var G__22873__i = 0, G__22873__a = new Array(arguments.length -  0);
+while (G__22873__i < G__22873__a.length) {G__22873__a[G__22873__i] = arguments[G__22873__i + 0]; ++G__22873__i;}
+  p__22871 = new cljs.core.IndexedSeq(G__22873__a,0,null);
 } 
-return re_com$buttons$info_button_$_info_button_render__delegate.call(this,p__16819);};
+return re_com$buttons$info_button_$_info_button_render__delegate.call(this,p__22871);};
 re_com$buttons$info_button_$_info_button_render.cljs$lang$maxFixedArity = 0;
-re_com$buttons$info_button_$_info_button_render.cljs$lang$applyTo = (function (arglist__16822){
-var p__16819 = cljs.core.seq(arglist__16822);
-return re_com$buttons$info_button_$_info_button_render__delegate(p__16819);
+re_com$buttons$info_button_$_info_button_render.cljs$lang$applyTo = (function (arglist__22874){
+var p__22871 = cljs.core.seq(arglist__22874);
+return re_com$buttons$info_button_$_info_button_render__delegate(p__22871);
 });
 re_com$buttons$info_button_$_info_button_render.cljs$core$IFn$_invoke$arity$variadic = re_com$buttons$info_button_$_info_button_render__delegate;
 return re_com$buttons$info_button_$_info_button_render;
@@ -399,21 +399,21 @@ re_com.buttons.row_button_args_desc = ((re_com.config.include_args_desc_QMARK_)?
 re_com.buttons.row_button = (function re_com$buttons$row_button(){
 var showing_QMARK_ = reagent.core.atom.call(null,false);
 return (function() { 
-var re_com$buttons$row_button_$_row_button_render__delegate = function (p__16823){
-var map__16824 = p__16823;
-var map__16824__$1 = cljs.core.__destructure_map.call(null,map__16824);
-var args = map__16824__$1;
-var disabled_QMARK_ = cljs.core.get.call(null,map__16824__$1,new cljs.core.Keyword(null,"disabled?","disabled?",-1523234181));
-var tooltip = cljs.core.get.call(null,map__16824__$1,new cljs.core.Keyword(null,"tooltip","tooltip",-1809677058));
-var attr = cljs.core.get.call(null,map__16824__$1,new cljs.core.Keyword(null,"attr","attr",-604132353));
-var md_icon_name = cljs.core.get.call(null,map__16824__$1,new cljs.core.Keyword(null,"md-icon-name","md-icon-name",681785863),"zmdi-plus");
-var parts = cljs.core.get.call(null,map__16824__$1,new cljs.core.Keyword(null,"parts","parts",849007691));
-var src = cljs.core.get.call(null,map__16824__$1,new cljs.core.Keyword(null,"src","src",-1651076051));
-var on_click = cljs.core.get.call(null,map__16824__$1,new cljs.core.Keyword(null,"on-click","on-click",1632826543));
-var style = cljs.core.get.call(null,map__16824__$1,new cljs.core.Keyword(null,"style","style",-496642736));
-var class$ = cljs.core.get.call(null,map__16824__$1,new cljs.core.Keyword(null,"class","class",-2030961996));
-var tooltip_position = cljs.core.get.call(null,map__16824__$1,new cljs.core.Keyword(null,"tooltip-position","tooltip-position",936197013));
-var mouse_over_row_QMARK_ = cljs.core.get.call(null,map__16824__$1,new cljs.core.Keyword(null,"mouse-over-row?","mouse-over-row?",-446703882));
+var re_com$buttons$row_button_$_row_button_render__delegate = function (p__22875){
+var map__22876 = p__22875;
+var map__22876__$1 = cljs.core.__destructure_map.call(null,map__22876);
+var args = map__22876__$1;
+var disabled_QMARK_ = cljs.core.get.call(null,map__22876__$1,new cljs.core.Keyword(null,"disabled?","disabled?",-1523234181));
+var tooltip = cljs.core.get.call(null,map__22876__$1,new cljs.core.Keyword(null,"tooltip","tooltip",-1809677058));
+var attr = cljs.core.get.call(null,map__22876__$1,new cljs.core.Keyword(null,"attr","attr",-604132353));
+var md_icon_name = cljs.core.get.call(null,map__22876__$1,new cljs.core.Keyword(null,"md-icon-name","md-icon-name",681785863),"zmdi-plus");
+var parts = cljs.core.get.call(null,map__22876__$1,new cljs.core.Keyword(null,"parts","parts",849007691));
+var src = cljs.core.get.call(null,map__22876__$1,new cljs.core.Keyword(null,"src","src",-1651076051));
+var on_click = cljs.core.get.call(null,map__22876__$1,new cljs.core.Keyword(null,"on-click","on-click",1632826543));
+var style = cljs.core.get.call(null,map__22876__$1,new cljs.core.Keyword(null,"style","style",-496642736));
+var class$ = cljs.core.get.call(null,map__22876__$1,new cljs.core.Keyword(null,"class","class",-2030961996));
+var tooltip_position = cljs.core.get.call(null,map__22876__$1,new cljs.core.Keyword(null,"tooltip-position","tooltip-position",936197013));
+var mouse_over_row_QMARK_ = cljs.core.get.call(null,map__22876__$1,new cljs.core.Keyword(null,"mouse-over-row?","mouse-over-row?",-446703882));
 var or__4160__auto__ = (((!(goog.DEBUG)))?null:re_com.validate.validate_args.call(null,re_com.validate.extract_arg_data.call(null,re_com.buttons.row_button_args_desc),args));
 if(cljs.core.truth_(or__4160__auto__)){
 return or__4160__auto__;
@@ -455,17 +455,17 @@ return new cljs.core.Keyword(null,"below-center","below-center",-2126885397);
 }
 };
 var re_com$buttons$row_button_$_row_button_render = function (var_args){
-var p__16823 = null;
+var p__22875 = null;
 if (arguments.length > 0) {
-var G__16825__i = 0, G__16825__a = new Array(arguments.length -  0);
-while (G__16825__i < G__16825__a.length) {G__16825__a[G__16825__i] = arguments[G__16825__i + 0]; ++G__16825__i;}
-  p__16823 = new cljs.core.IndexedSeq(G__16825__a,0,null);
+var G__22877__i = 0, G__22877__a = new Array(arguments.length -  0);
+while (G__22877__i < G__22877__a.length) {G__22877__a[G__22877__i] = arguments[G__22877__i + 0]; ++G__22877__i;}
+  p__22875 = new cljs.core.IndexedSeq(G__22877__a,0,null);
 } 
-return re_com$buttons$row_button_$_row_button_render__delegate.call(this,p__16823);};
+return re_com$buttons$row_button_$_row_button_render__delegate.call(this,p__22875);};
 re_com$buttons$row_button_$_row_button_render.cljs$lang$maxFixedArity = 0;
-re_com$buttons$row_button_$_row_button_render.cljs$lang$applyTo = (function (arglist__16826){
-var p__16823 = cljs.core.seq(arglist__16826);
-return re_com$buttons$row_button_$_row_button_render__delegate(p__16823);
+re_com$buttons$row_button_$_row_button_render.cljs$lang$applyTo = (function (arglist__22878){
+var p__22875 = cljs.core.seq(arglist__22878);
+return re_com$buttons$row_button_$_row_button_render__delegate(p__22875);
 });
 re_com$buttons$row_button_$_row_button_render.cljs$core$IFn$_invoke$arity$variadic = re_com$buttons$row_button_$_row_button_render__delegate;
 return re_com$buttons$row_button_$_row_button_render;
@@ -483,21 +483,21 @@ re_com.buttons.hyperlink_args_desc = ((re_com.config.include_args_desc_QMARK_)?n
 re_com.buttons.hyperlink = (function re_com$buttons$hyperlink(){
 var showing_QMARK_ = reagent.core.atom.call(null,false);
 return (function() { 
-var re_com$buttons$hyperlink_$_hyperlink_render__delegate = function (p__16827){
-var map__16828 = p__16827;
-var map__16828__$1 = cljs.core.__destructure_map.call(null,map__16828);
-var args = map__16828__$1;
-var disabled_QMARK_ = cljs.core.get.call(null,map__16828__$1,new cljs.core.Keyword(null,"disabled?","disabled?",-1523234181));
-var tooltip = cljs.core.get.call(null,map__16828__$1,new cljs.core.Keyword(null,"tooltip","tooltip",-1809677058));
-var attr = cljs.core.get.call(null,map__16828__$1,new cljs.core.Keyword(null,"attr","attr",-604132353));
-var parts = cljs.core.get.call(null,map__16828__$1,new cljs.core.Keyword(null,"parts","parts",849007691));
-var src = cljs.core.get.call(null,map__16828__$1,new cljs.core.Keyword(null,"src","src",-1651076051));
-var on_click = cljs.core.get.call(null,map__16828__$1,new cljs.core.Keyword(null,"on-click","on-click",1632826543));
-var style = cljs.core.get.call(null,map__16828__$1,new cljs.core.Keyword(null,"style","style",-496642736));
-var debug_as = cljs.core.get.call(null,map__16828__$1,new cljs.core.Keyword(null,"debug-as","debug-as",283322354));
-var label = cljs.core.get.call(null,map__16828__$1,new cljs.core.Keyword(null,"label","label",1718410804));
-var class$ = cljs.core.get.call(null,map__16828__$1,new cljs.core.Keyword(null,"class","class",-2030961996));
-var tooltip_position = cljs.core.get.call(null,map__16828__$1,new cljs.core.Keyword(null,"tooltip-position","tooltip-position",936197013));
+var re_com$buttons$hyperlink_$_hyperlink_render__delegate = function (p__22879){
+var map__22880 = p__22879;
+var map__22880__$1 = cljs.core.__destructure_map.call(null,map__22880);
+var args = map__22880__$1;
+var disabled_QMARK_ = cljs.core.get.call(null,map__22880__$1,new cljs.core.Keyword(null,"disabled?","disabled?",-1523234181));
+var tooltip = cljs.core.get.call(null,map__22880__$1,new cljs.core.Keyword(null,"tooltip","tooltip",-1809677058));
+var attr = cljs.core.get.call(null,map__22880__$1,new cljs.core.Keyword(null,"attr","attr",-604132353));
+var parts = cljs.core.get.call(null,map__22880__$1,new cljs.core.Keyword(null,"parts","parts",849007691));
+var src = cljs.core.get.call(null,map__22880__$1,new cljs.core.Keyword(null,"src","src",-1651076051));
+var on_click = cljs.core.get.call(null,map__22880__$1,new cljs.core.Keyword(null,"on-click","on-click",1632826543));
+var style = cljs.core.get.call(null,map__22880__$1,new cljs.core.Keyword(null,"style","style",-496642736));
+var debug_as = cljs.core.get.call(null,map__22880__$1,new cljs.core.Keyword(null,"debug-as","debug-as",283322354));
+var label = cljs.core.get.call(null,map__22880__$1,new cljs.core.Keyword(null,"label","label",1718410804));
+var class$ = cljs.core.get.call(null,map__22880__$1,new cljs.core.Keyword(null,"class","class",-2030961996));
+var tooltip_position = cljs.core.get.call(null,map__22880__$1,new cljs.core.Keyword(null,"tooltip-position","tooltip-position",936197013));
 var or__4160__auto__ = (((!(goog.DEBUG)))?null:re_com.validate.validate_args.call(null,re_com.validate.extract_arg_data.call(null,re_com.buttons.hyperlink_args_desc),args));
 if(cljs.core.truth_(or__4160__auto__)){
 return or__4160__auto__;
@@ -547,17 +547,17 @@ return new cljs.core.Keyword(null,"below-center","below-center",-2126885397);
 }
 };
 var re_com$buttons$hyperlink_$_hyperlink_render = function (var_args){
-var p__16827 = null;
+var p__22879 = null;
 if (arguments.length > 0) {
-var G__16829__i = 0, G__16829__a = new Array(arguments.length -  0);
-while (G__16829__i < G__16829__a.length) {G__16829__a[G__16829__i] = arguments[G__16829__i + 0]; ++G__16829__i;}
-  p__16827 = new cljs.core.IndexedSeq(G__16829__a,0,null);
+var G__22881__i = 0, G__22881__a = new Array(arguments.length -  0);
+while (G__22881__i < G__22881__a.length) {G__22881__a[G__22881__i] = arguments[G__22881__i + 0]; ++G__22881__i;}
+  p__22879 = new cljs.core.IndexedSeq(G__22881__a,0,null);
 } 
-return re_com$buttons$hyperlink_$_hyperlink_render__delegate.call(this,p__16827);};
+return re_com$buttons$hyperlink_$_hyperlink_render__delegate.call(this,p__22879);};
 re_com$buttons$hyperlink_$_hyperlink_render.cljs$lang$maxFixedArity = 0;
-re_com$buttons$hyperlink_$_hyperlink_render.cljs$lang$applyTo = (function (arglist__16830){
-var p__16827 = cljs.core.seq(arglist__16830);
-return re_com$buttons$hyperlink_$_hyperlink_render__delegate(p__16827);
+re_com$buttons$hyperlink_$_hyperlink_render.cljs$lang$applyTo = (function (arglist__22882){
+var p__22879 = cljs.core.seq(arglist__22882);
+return re_com$buttons$hyperlink_$_hyperlink_render__delegate(p__22879);
 });
 re_com$buttons$hyperlink_$_hyperlink_render.cljs$core$IFn$_invoke$arity$variadic = re_com$buttons$hyperlink_$_hyperlink_render__delegate;
 return re_com$buttons$hyperlink_$_hyperlink_render;
@@ -575,22 +575,22 @@ re_com.buttons.hyperlink_href_args_desc = ((re_com.config.include_args_desc_QMAR
 re_com.buttons.hyperlink_href = (function re_com$buttons$hyperlink_href(){
 var showing_QMARK_ = reagent.core.atom.call(null,false);
 return (function() { 
-var re_com$buttons$hyperlink_href_$_hyperlink_href_render__delegate = function (p__16831){
-var map__16832 = p__16831;
-var map__16832__$1 = cljs.core.__destructure_map.call(null,map__16832);
-var args = map__16832__$1;
-var target = cljs.core.get.call(null,map__16832__$1,new cljs.core.Keyword(null,"target","target",253001721));
-var disabled_QMARK_ = cljs.core.get.call(null,map__16832__$1,new cljs.core.Keyword(null,"disabled?","disabled?",-1523234181));
-var href = cljs.core.get.call(null,map__16832__$1,new cljs.core.Keyword(null,"href","href",-793805698));
-var tooltip = cljs.core.get.call(null,map__16832__$1,new cljs.core.Keyword(null,"tooltip","tooltip",-1809677058));
-var attr = cljs.core.get.call(null,map__16832__$1,new cljs.core.Keyword(null,"attr","attr",-604132353));
-var parts = cljs.core.get.call(null,map__16832__$1,new cljs.core.Keyword(null,"parts","parts",849007691));
-var src = cljs.core.get.call(null,map__16832__$1,new cljs.core.Keyword(null,"src","src",-1651076051));
-var style = cljs.core.get.call(null,map__16832__$1,new cljs.core.Keyword(null,"style","style",-496642736));
-var debug_as = cljs.core.get.call(null,map__16832__$1,new cljs.core.Keyword(null,"debug-as","debug-as",283322354));
-var label = cljs.core.get.call(null,map__16832__$1,new cljs.core.Keyword(null,"label","label",1718410804));
-var class$ = cljs.core.get.call(null,map__16832__$1,new cljs.core.Keyword(null,"class","class",-2030961996));
-var tooltip_position = cljs.core.get.call(null,map__16832__$1,new cljs.core.Keyword(null,"tooltip-position","tooltip-position",936197013));
+var re_com$buttons$hyperlink_href_$_hyperlink_href_render__delegate = function (p__22883){
+var map__22884 = p__22883;
+var map__22884__$1 = cljs.core.__destructure_map.call(null,map__22884);
+var args = map__22884__$1;
+var target = cljs.core.get.call(null,map__22884__$1,new cljs.core.Keyword(null,"target","target",253001721));
+var disabled_QMARK_ = cljs.core.get.call(null,map__22884__$1,new cljs.core.Keyword(null,"disabled?","disabled?",-1523234181));
+var href = cljs.core.get.call(null,map__22884__$1,new cljs.core.Keyword(null,"href","href",-793805698));
+var tooltip = cljs.core.get.call(null,map__22884__$1,new cljs.core.Keyword(null,"tooltip","tooltip",-1809677058));
+var attr = cljs.core.get.call(null,map__22884__$1,new cljs.core.Keyword(null,"attr","attr",-604132353));
+var parts = cljs.core.get.call(null,map__22884__$1,new cljs.core.Keyword(null,"parts","parts",849007691));
+var src = cljs.core.get.call(null,map__22884__$1,new cljs.core.Keyword(null,"src","src",-1651076051));
+var style = cljs.core.get.call(null,map__22884__$1,new cljs.core.Keyword(null,"style","style",-496642736));
+var debug_as = cljs.core.get.call(null,map__22884__$1,new cljs.core.Keyword(null,"debug-as","debug-as",283322354));
+var label = cljs.core.get.call(null,map__22884__$1,new cljs.core.Keyword(null,"label","label",1718410804));
+var class$ = cljs.core.get.call(null,map__22884__$1,new cljs.core.Keyword(null,"class","class",-2030961996));
+var tooltip_position = cljs.core.get.call(null,map__22884__$1,new cljs.core.Keyword(null,"tooltip-position","tooltip-position",936197013));
 var or__4160__auto__ = (((!(goog.DEBUG)))?null:re_com.validate.validate_args.call(null,re_com.validate.extract_arg_data.call(null,re_com.buttons.hyperlink_href_args_desc),args));
 if(cljs.core.truth_(or__4160__auto__)){
 return or__4160__auto__;
@@ -629,17 +629,17 @@ return new cljs.core.Keyword(null,"below-center","below-center",-2126885397);
 }
 };
 var re_com$buttons$hyperlink_href_$_hyperlink_href_render = function (var_args){
-var p__16831 = null;
+var p__22883 = null;
 if (arguments.length > 0) {
-var G__16833__i = 0, G__16833__a = new Array(arguments.length -  0);
-while (G__16833__i < G__16833__a.length) {G__16833__a[G__16833__i] = arguments[G__16833__i + 0]; ++G__16833__i;}
-  p__16831 = new cljs.core.IndexedSeq(G__16833__a,0,null);
+var G__22885__i = 0, G__22885__a = new Array(arguments.length -  0);
+while (G__22885__i < G__22885__a.length) {G__22885__a[G__22885__i] = arguments[G__22885__i + 0]; ++G__22885__i;}
+  p__22883 = new cljs.core.IndexedSeq(G__22885__a,0,null);
 } 
-return re_com$buttons$hyperlink_href_$_hyperlink_href_render__delegate.call(this,p__16831);};
+return re_com$buttons$hyperlink_href_$_hyperlink_href_render__delegate.call(this,p__22883);};
 re_com$buttons$hyperlink_href_$_hyperlink_href_render.cljs$lang$maxFixedArity = 0;
-re_com$buttons$hyperlink_href_$_hyperlink_href_render.cljs$lang$applyTo = (function (arglist__16834){
-var p__16831 = cljs.core.seq(arglist__16834);
-return re_com$buttons$hyperlink_href_$_hyperlink_href_render__delegate(p__16831);
+re_com$buttons$hyperlink_href_$_hyperlink_href_render.cljs$lang$applyTo = (function (arglist__22886){
+var p__22883 = cljs.core.seq(arglist__22886);
+return re_com$buttons$hyperlink_href_$_hyperlink_href_render__delegate(p__22883);
 });
 re_com$buttons$hyperlink_href_$_hyperlink_href_render.cljs$core$IFn$_invoke$arity$variadic = re_com$buttons$hyperlink_href_$_hyperlink_href_render__delegate;
 return re_com$buttons$hyperlink_href_$_hyperlink_href_render;

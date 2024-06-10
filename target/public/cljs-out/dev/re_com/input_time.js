@@ -28,11 +28,11 @@ return val;
 /**
  * Return a time integer from a triple int vector of form  [H  _  M]
  */
-re_com.input_time.triple__GT_time = (function re_com$input_time$triple__GT_time(p__21310){
-var vec__21311 = p__21310;
-var hr = cljs.core.nth.call(null,vec__21311,(0),null);
-var _ = cljs.core.nth.call(null,vec__21311,(1),null);
-var mi = cljs.core.nth.call(null,vec__21311,(2),null);
+re_com.input_time.triple__GT_time = (function re_com$input_time$triple__GT_time(p__25538){
+var vec__25539 = p__25538;
+var hr = cljs.core.nth.call(null,vec__25539,(0),null);
+var _ = cljs.core.nth.call(null,vec__25539,(1),null);
+var mi = cljs.core.nth.call(null,vec__25539,(2),null);
 return ((hr * (100)) + mi);
 });
 re_com.input_time.triple_seeking_re = /^(\d{0,2})()()$|^(\d{0,1})(:{0,1})(\d{0,2})$|^(\d{0,2})(:{0,1})(\d{0,2})$/;
@@ -167,14 +167,14 @@ re_com.input_time.input_time_args_desc = ((re_com.config.include_args_desc_QMARK
  */
 re_com.input_time.input_time = (function re_com$input_time$input_time(var_args){
 var args__4777__auto__ = [];
-var len__4771__auto___21319 = arguments.length;
-var i__4772__auto___21320 = (0);
+var len__4771__auto___25547 = arguments.length;
+var i__4772__auto___25548 = (0);
 while(true){
-if((i__4772__auto___21320 < len__4771__auto___21319)){
-args__4777__auto__.push((arguments[i__4772__auto___21320]));
+if((i__4772__auto___25548 < len__4771__auto___25547)){
+args__4777__auto__.push((arguments[i__4772__auto___25548]));
 
-var G__21321 = (i__4772__auto___21320 + (1));
-i__4772__auto___21320 = G__21321;
+var G__25549 = (i__4772__auto___25548 + (1));
+i__4772__auto___25548 = G__25549;
 continue;
 } else {
 }
@@ -185,13 +185,13 @@ var argseq__4778__auto__ = ((((0) < args__4777__auto__.length))?(new cljs.core.I
 return re_com.input_time.input_time.cljs$core$IFn$_invoke$arity$variadic(argseq__4778__auto__);
 });
 
-(re_com.input_time.input_time.cljs$core$IFn$_invoke$arity$variadic = (function (p__21315){
-var map__21316 = p__21315;
-var map__21316__$1 = cljs.core.__destructure_map.call(null,map__21316);
-var args = map__21316__$1;
-var model = cljs.core.get.call(null,map__21316__$1,new cljs.core.Keyword(null,"model","model",331153215));
-var minimum = cljs.core.get.call(null,map__21316__$1,new cljs.core.Keyword(null,"minimum","minimum",-1621006059),(0));
-var maximum = cljs.core.get.call(null,map__21316__$1,new cljs.core.Keyword(null,"maximum","maximum",573880714),(2359));
+(re_com.input_time.input_time.cljs$core$IFn$_invoke$arity$variadic = (function (p__25543){
+var map__25544 = p__25543;
+var map__25544__$1 = cljs.core.__destructure_map.call(null,map__25544);
+var args = map__25544__$1;
+var model = cljs.core.get.call(null,map__25544__$1,new cljs.core.Keyword(null,"model","model",331153215));
+var minimum = cljs.core.get.call(null,map__25544__$1,new cljs.core.Keyword(null,"minimum","minimum",-1621006059),(0));
+var maximum = cljs.core.get.call(null,map__25544__$1,new cljs.core.Keyword(null,"maximum","maximum",573880714),(2359));
 var or__4160__auto__ = (((!(goog.DEBUG)))?null:re_com.validate.validate_args.call(null,re_com.validate.extract_arg_data.call(null,re_com.input_time.input_time_args_desc),args));
 if(cljs.core.truth_(or__4160__auto__)){
 return or__4160__auto__;
@@ -204,25 +204,25 @@ var deref_model = re_com.util.deref_or_value.call(null,model);
 var text_model = reagent.core.atom.call(null,re_com.input_time.time__GT_text.call(null,deref_model));
 var previous_model = reagent.core.atom.call(null,deref_model);
 return (function() { 
-var re_com$input_time$input_time_render__delegate = function (p__21317){
-var map__21318 = p__21317;
-var map__21318__$1 = cljs.core.__destructure_map.call(null,map__21318);
-var args__$1 = map__21318__$1;
-var disabled_QMARK_ = cljs.core.get.call(null,map__21318__$1,new cljs.core.Keyword(null,"disabled?","disabled?",-1523234181));
-var on_change = cljs.core.get.call(null,map__21318__$1,new cljs.core.Keyword(null,"on-change","on-change",-732046149));
-var height = cljs.core.get.call(null,map__21318__$1,new cljs.core.Keyword(null,"height","height",1025178622));
-var model__$1 = cljs.core.get.call(null,map__21318__$1,new cljs.core.Keyword(null,"model","model",331153215));
-var attr = cljs.core.get.call(null,map__21318__$1,new cljs.core.Keyword(null,"attr","attr",-604132353));
-var hide_border_QMARK_ = cljs.core.get.call(null,map__21318__$1,new cljs.core.Keyword(null,"hide-border?","hide-border?",1792698922));
-var maximum__$1 = cljs.core.get.call(null,map__21318__$1,new cljs.core.Keyword(null,"maximum","maximum",573880714),(2359));
-var parts = cljs.core.get.call(null,map__21318__$1,new cljs.core.Keyword(null,"parts","parts",849007691));
-var width = cljs.core.get.call(null,map__21318__$1,new cljs.core.Keyword(null,"width","width",-384071477));
-var src = cljs.core.get.call(null,map__21318__$1,new cljs.core.Keyword(null,"src","src",-1651076051));
-var style = cljs.core.get.call(null,map__21318__$1,new cljs.core.Keyword(null,"style","style",-496642736));
-var debug_as = cljs.core.get.call(null,map__21318__$1,new cljs.core.Keyword(null,"debug-as","debug-as",283322354));
-var class$ = cljs.core.get.call(null,map__21318__$1,new cljs.core.Keyword(null,"class","class",-2030961996));
-var show_icon_QMARK_ = cljs.core.get.call(null,map__21318__$1,new cljs.core.Keyword(null,"show-icon?","show-icon?",-756836459));
-var minimum__$1 = cljs.core.get.call(null,map__21318__$1,new cljs.core.Keyword(null,"minimum","minimum",-1621006059),(0));
+var re_com$input_time$input_time_render__delegate = function (p__25545){
+var map__25546 = p__25545;
+var map__25546__$1 = cljs.core.__destructure_map.call(null,map__25546);
+var args__$1 = map__25546__$1;
+var disabled_QMARK_ = cljs.core.get.call(null,map__25546__$1,new cljs.core.Keyword(null,"disabled?","disabled?",-1523234181));
+var on_change = cljs.core.get.call(null,map__25546__$1,new cljs.core.Keyword(null,"on-change","on-change",-732046149));
+var height = cljs.core.get.call(null,map__25546__$1,new cljs.core.Keyword(null,"height","height",1025178622));
+var model__$1 = cljs.core.get.call(null,map__25546__$1,new cljs.core.Keyword(null,"model","model",331153215));
+var attr = cljs.core.get.call(null,map__25546__$1,new cljs.core.Keyword(null,"attr","attr",-604132353));
+var hide_border_QMARK_ = cljs.core.get.call(null,map__25546__$1,new cljs.core.Keyword(null,"hide-border?","hide-border?",1792698922));
+var maximum__$1 = cljs.core.get.call(null,map__25546__$1,new cljs.core.Keyword(null,"maximum","maximum",573880714),(2359));
+var parts = cljs.core.get.call(null,map__25546__$1,new cljs.core.Keyword(null,"parts","parts",849007691));
+var width = cljs.core.get.call(null,map__25546__$1,new cljs.core.Keyword(null,"width","width",-384071477));
+var src = cljs.core.get.call(null,map__25546__$1,new cljs.core.Keyword(null,"src","src",-1651076051));
+var style = cljs.core.get.call(null,map__25546__$1,new cljs.core.Keyword(null,"style","style",-496642736));
+var debug_as = cljs.core.get.call(null,map__25546__$1,new cljs.core.Keyword(null,"debug-as","debug-as",283322354));
+var class$ = cljs.core.get.call(null,map__25546__$1,new cljs.core.Keyword(null,"class","class",-2030961996));
+var show_icon_QMARK_ = cljs.core.get.call(null,map__25546__$1,new cljs.core.Keyword(null,"show-icon?","show-icon?",-756836459));
+var minimum__$1 = cljs.core.get.call(null,map__25546__$1,new cljs.core.Keyword(null,"minimum","minimum",-1621006059),(0));
 var or__4160__auto____$2 = (((!(goog.DEBUG)))?null:re_com.validate.validate_args.call(null,re_com.validate.extract_arg_data.call(null,re_com.input_time.input_time_args_desc),args__$1));
 if(cljs.core.truth_(or__4160__auto____$2)){
 return or__4160__auto____$2;
@@ -265,17 +265,17 @@ return null;
 }
 };
 var re_com$input_time$input_time_render = function (var_args){
-var p__21317 = null;
+var p__25545 = null;
 if (arguments.length > 0) {
-var G__21322__i = 0, G__21322__a = new Array(arguments.length -  0);
-while (G__21322__i < G__21322__a.length) {G__21322__a[G__21322__i] = arguments[G__21322__i + 0]; ++G__21322__i;}
-  p__21317 = new cljs.core.IndexedSeq(G__21322__a,0,null);
+var G__25550__i = 0, G__25550__a = new Array(arguments.length -  0);
+while (G__25550__i < G__25550__a.length) {G__25550__a[G__25550__i] = arguments[G__25550__i + 0]; ++G__25550__i;}
+  p__25545 = new cljs.core.IndexedSeq(G__25550__a,0,null);
 } 
-return re_com$input_time$input_time_render__delegate.call(this,p__21317);};
+return re_com$input_time$input_time_render__delegate.call(this,p__25545);};
 re_com$input_time$input_time_render.cljs$lang$maxFixedArity = 0;
-re_com$input_time$input_time_render.cljs$lang$applyTo = (function (arglist__21323){
-var p__21317 = cljs.core.seq(arglist__21323);
-return re_com$input_time$input_time_render__delegate(p__21317);
+re_com$input_time$input_time_render.cljs$lang$applyTo = (function (arglist__25551){
+var p__25545 = cljs.core.seq(arglist__25551);
+return re_com$input_time$input_time_render__delegate(p__25545);
 });
 re_com$input_time$input_time_render.cljs$core$IFn$_invoke$arity$variadic = re_com$input_time$input_time_render__delegate;
 return re_com$input_time$input_time_render;
@@ -288,9 +288,9 @@ return re_com$input_time$input_time_render;
 (re_com.input_time.input_time.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(re_com.input_time.input_time.cljs$lang$applyTo = (function (seq21314){
+(re_com.input_time.input_time.cljs$lang$applyTo = (function (seq25542){
 var self__4759__auto__ = this;
-return self__4759__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq21314));
+return self__4759__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq25542));
 }));
 
 

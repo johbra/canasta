@@ -233,4 +233,3 @@
       (fehlende-dateien-anzeigen historie spieler-namen))
     ))
 
-

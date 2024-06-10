@@ -10,8 +10,8 @@ goog.require('re_com.box');
 goog.require('re_com.validate');
 goog.require('re_com.util');
 re_com.selection_list.label_style = (function re_com$selection_list$label_style(var_args){
-var G__21387 = arguments.length;
-switch (G__21387) {
+var G__25615 = arguments.length;
+switch (G__25615) {
 case 2:
 return re_com.selection_list.label_style.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -123,14 +123,14 @@ re_com.selection_list.selection_list_args_desc = ((re_com.config.include_args_de
  */
 re_com.selection_list.selection_list = (function re_com$selection_list$selection_list(var_args){
 var args__4777__auto__ = [];
-var len__4771__auto___21395 = arguments.length;
-var i__4772__auto___21396 = (0);
+var len__4771__auto___25623 = arguments.length;
+var i__4772__auto___25624 = (0);
 while(true){
-if((i__4772__auto___21396 < len__4771__auto___21395)){
-args__4777__auto__.push((arguments[i__4772__auto___21396]));
+if((i__4772__auto___25624 < len__4771__auto___25623)){
+args__4777__auto__.push((arguments[i__4772__auto___25624]));
 
-var G__21397 = (i__4772__auto___21396 + (1));
-i__4772__auto___21396 = G__21397;
+var G__25625 = (i__4772__auto___25624 + (1));
+i__4772__auto___25624 = G__25625;
 continue;
 } else {
 }
@@ -141,30 +141,30 @@ var argseq__4778__auto__ = ((((0) < args__4777__auto__.length))?(new cljs.core.I
 return re_com.selection_list.selection_list.cljs$core$IFn$_invoke$arity$variadic(argseq__4778__auto__);
 });
 
-(re_com.selection_list.selection_list.cljs$core$IFn$_invoke$arity$variadic = (function (p__21393){
-var map__21394 = p__21393;
-var map__21394__$1 = cljs.core.__destructure_map.call(null,map__21394);
-var args = map__21394__$1;
-var disabled_QMARK_ = cljs.core.get.call(null,map__21394__$1,new cljs.core.Keyword(null,"disabled?","disabled?",-1523234181),false);
-var on_change = cljs.core.get.call(null,map__21394__$1,new cljs.core.Keyword(null,"on-change","on-change",-732046149));
-var height = cljs.core.get.call(null,map__21394__$1,new cljs.core.Keyword(null,"height","height",1025178622));
-var item_renderer = cljs.core.get.call(null,map__21394__$1,new cljs.core.Keyword(null,"item-renderer","item-renderer",-743065410));
-var model = cljs.core.get.call(null,map__21394__$1,new cljs.core.Keyword(null,"model","model",331153215));
-var attr = cljs.core.get.call(null,map__21394__$1,new cljs.core.Keyword(null,"attr","attr",-604132353));
-var label_fn = cljs.core.get.call(null,map__21394__$1,new cljs.core.Keyword(null,"label-fn","label-fn",-860923263),new cljs.core.Keyword(null,"label","label",1718410804));
-var required_QMARK_ = cljs.core.get.call(null,map__21394__$1,new cljs.core.Keyword(null,"required?","required?",-872514462),false);
-var as_exclusions_QMARK_ = cljs.core.get.call(null,map__21394__$1,new cljs.core.Keyword(null,"as-exclusions?","as-exclusions?",-55596285),false);
-var max_height = cljs.core.get.call(null,map__21394__$1,new cljs.core.Keyword(null,"max-height","max-height",-612563804));
-var hide_border_QMARK_ = cljs.core.get.call(null,map__21394__$1,new cljs.core.Keyword(null,"hide-border?","hide-border?",1792698922),false);
-var parts = cljs.core.get.call(null,map__21394__$1,new cljs.core.Keyword(null,"parts","parts",849007691));
-var width = cljs.core.get.call(null,map__21394__$1,new cljs.core.Keyword(null,"width","width",-384071477));
-var src = cljs.core.get.call(null,map__21394__$1,new cljs.core.Keyword(null,"src","src",-1651076051));
-var choices = cljs.core.get.call(null,map__21394__$1,new cljs.core.Keyword(null,"choices","choices",1385611597));
-var id_fn = cljs.core.get.call(null,map__21394__$1,new cljs.core.Keyword(null,"id-fn","id-fn",316222798),new cljs.core.Keyword(null,"id","id",-1388402092));
-var style = cljs.core.get.call(null,map__21394__$1,new cljs.core.Keyword(null,"style","style",-496642736));
-var debug_as = cljs.core.get.call(null,map__21394__$1,new cljs.core.Keyword(null,"debug-as","debug-as",283322354));
-var class$ = cljs.core.get.call(null,map__21394__$1,new cljs.core.Keyword(null,"class","class",-2030961996));
-var multi_select_QMARK_ = cljs.core.get.call(null,map__21394__$1,new cljs.core.Keyword(null,"multi-select?","multi-select?",973156151),true);
+(re_com.selection_list.selection_list.cljs$core$IFn$_invoke$arity$variadic = (function (p__25621){
+var map__25622 = p__25621;
+var map__25622__$1 = cljs.core.__destructure_map.call(null,map__25622);
+var args = map__25622__$1;
+var disabled_QMARK_ = cljs.core.get.call(null,map__25622__$1,new cljs.core.Keyword(null,"disabled?","disabled?",-1523234181),false);
+var on_change = cljs.core.get.call(null,map__25622__$1,new cljs.core.Keyword(null,"on-change","on-change",-732046149));
+var height = cljs.core.get.call(null,map__25622__$1,new cljs.core.Keyword(null,"height","height",1025178622));
+var item_renderer = cljs.core.get.call(null,map__25622__$1,new cljs.core.Keyword(null,"item-renderer","item-renderer",-743065410));
+var model = cljs.core.get.call(null,map__25622__$1,new cljs.core.Keyword(null,"model","model",331153215));
+var attr = cljs.core.get.call(null,map__25622__$1,new cljs.core.Keyword(null,"attr","attr",-604132353));
+var label_fn = cljs.core.get.call(null,map__25622__$1,new cljs.core.Keyword(null,"label-fn","label-fn",-860923263),new cljs.core.Keyword(null,"label","label",1718410804));
+var required_QMARK_ = cljs.core.get.call(null,map__25622__$1,new cljs.core.Keyword(null,"required?","required?",-872514462),false);
+var as_exclusions_QMARK_ = cljs.core.get.call(null,map__25622__$1,new cljs.core.Keyword(null,"as-exclusions?","as-exclusions?",-55596285),false);
+var max_height = cljs.core.get.call(null,map__25622__$1,new cljs.core.Keyword(null,"max-height","max-height",-612563804));
+var hide_border_QMARK_ = cljs.core.get.call(null,map__25622__$1,new cljs.core.Keyword(null,"hide-border?","hide-border?",1792698922),false);
+var parts = cljs.core.get.call(null,map__25622__$1,new cljs.core.Keyword(null,"parts","parts",849007691));
+var width = cljs.core.get.call(null,map__25622__$1,new cljs.core.Keyword(null,"width","width",-384071477));
+var src = cljs.core.get.call(null,map__25622__$1,new cljs.core.Keyword(null,"src","src",-1651076051));
+var choices = cljs.core.get.call(null,map__25622__$1,new cljs.core.Keyword(null,"choices","choices",1385611597));
+var id_fn = cljs.core.get.call(null,map__25622__$1,new cljs.core.Keyword(null,"id-fn","id-fn",316222798),new cljs.core.Keyword(null,"id","id",-1388402092));
+var style = cljs.core.get.call(null,map__25622__$1,new cljs.core.Keyword(null,"style","style",-496642736));
+var debug_as = cljs.core.get.call(null,map__25622__$1,new cljs.core.Keyword(null,"debug-as","debug-as",283322354));
+var class$ = cljs.core.get.call(null,map__25622__$1,new cljs.core.Keyword(null,"class","class",-2030961996));
+var multi_select_QMARK_ = cljs.core.get.call(null,map__25622__$1,new cljs.core.Keyword(null,"multi-select?","multi-select?",973156151),true);
 var or__4160__auto__ = (((!(goog.DEBUG)))?null:re_com.validate.validate_args.call(null,re_com.validate.extract_arg_data.call(null,re_com.selection_list.selection_list_args_desc),args));
 if(cljs.core.truth_(or__4160__auto__)){
 return or__4160__auto__;
@@ -182,12 +182,12 @@ var disabled_QMARK___$1 = re_com.util.deref_or_value.call(null,disabled_QMARK_);
 var hide_border_QMARK___$1 = re_com.util.deref_or_value.call(null,hide_border_QMARK_);
 var item_renderer__$1 = re_com.util.deref_or_value.call(null,item_renderer);
 var selected = (cljs.core.truth_(multi_select_QMARK___$1)?model__$1:cljs.core.set.call(null,(new cljs.core.PersistentVector(null,1,(5),cljs.core.PersistentVector.EMPTY_NODE,[cljs.core.first.call(null,model__$1)],null))));
-var items = cljs.core.map.call(null,(cljs.core.truth_(item_renderer__$1)?(function (p1__21389_SHARP_){
-return item_renderer__$1.call(null,p1__21389_SHARP_,id_fn,selected,on_change__$1,disabled_QMARK___$1,label_fn,required_QMARK___$1,as_exclusions_QMARK___$1);
-}):(cljs.core.truth_(multi_select_QMARK___$1)?(function (p1__21390_SHARP_){
-return re_com.selection_list.as_checked.call(null,p1__21390_SHARP_,id_fn,selected,on_change__$1,disabled_QMARK___$1,label_fn,required_QMARK___$1,as_exclusions_QMARK___$1,parts);
-}):(function (p1__21391_SHARP_){
-return re_com.selection_list.as_radio.call(null,p1__21391_SHARP_,id_fn,selected,on_change__$1,disabled_QMARK___$1,label_fn,required_QMARK___$1,as_exclusions_QMARK___$1,parts);
+var items = cljs.core.map.call(null,(cljs.core.truth_(item_renderer__$1)?(function (p1__25617_SHARP_){
+return item_renderer__$1.call(null,p1__25617_SHARP_,id_fn,selected,on_change__$1,disabled_QMARK___$1,label_fn,required_QMARK___$1,as_exclusions_QMARK___$1);
+}):(cljs.core.truth_(multi_select_QMARK___$1)?(function (p1__25618_SHARP_){
+return re_com.selection_list.as_checked.call(null,p1__25618_SHARP_,id_fn,selected,on_change__$1,disabled_QMARK___$1,label_fn,required_QMARK___$1,as_exclusions_QMARK___$1,parts);
+}):(function (p1__25619_SHARP_){
+return re_com.selection_list.as_radio.call(null,p1__25619_SHARP_,id_fn,selected,on_change__$1,disabled_QMARK___$1,label_fn,required_QMARK___$1,as_exclusions_QMARK___$1,parts);
 }))),choices__$1);
 var bounds = cljs.core.select_keys.call(null,args,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"width","width",-384071477),new cljs.core.Keyword(null,"height","height",1025178622),new cljs.core.Keyword(null,"max-height","max-height",-612563804)], null));
 var spacing = (cljs.core.truth_(hide_border_QMARK___$1)?re_com.selection_list.spacing_unbordered:re_com.selection_list.spacing_bordered);
@@ -204,9 +204,9 @@ return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"co
 (re_com.selection_list.selection_list.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(re_com.selection_list.selection_list.cljs$lang$applyTo = (function (seq21392){
+(re_com.selection_list.selection_list.cljs$lang$applyTo = (function (seq25620){
 var self__4759__auto__ = this;
-return self__4759__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq21392));
+return self__4759__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq25620));
 }));
 
 

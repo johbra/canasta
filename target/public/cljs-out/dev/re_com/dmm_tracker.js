@@ -25,7 +25,7 @@ throw (new Error("Couldn't find addEventListener method in document-event-listen
  */
 re_com.dmm_tracker.IMouseMoveTracker = function(){};
 
-var re_com$dmm_tracker$IMouseMoveTracker$captureMouseMoves$dyn_16928 = (function (this$,event){
+var re_com$dmm_tracker$IMouseMoveTracker$captureMouseMoves$dyn_22980 = (function (this$,event){
 var x__4463__auto__ = (((this$ == null))?null:this$);
 var m__4464__auto__ = (re_com.dmm_tracker.captureMouseMoves[goog.typeOf(x__4463__auto__)]);
 if((!((m__4464__auto__ == null)))){
@@ -43,11 +43,11 @@ re_com.dmm_tracker.captureMouseMoves = (function re_com$dmm_tracker$captureMouse
 if((((!((this$ == null)))) && ((!((this$.re_com$dmm_tracker$IMouseMoveTracker$captureMouseMoves$arity$2 == null)))))){
 return this$.re_com$dmm_tracker$IMouseMoveTracker$captureMouseMoves$arity$2(this$,event);
 } else {
-return re_com$dmm_tracker$IMouseMoveTracker$captureMouseMoves$dyn_16928.call(null,this$,event);
+return re_com$dmm_tracker$IMouseMoveTracker$captureMouseMoves$dyn_22980.call(null,this$,event);
 }
 });
 
-var re_com$dmm_tracker$IMouseMoveTracker$_releaseMouseMoves$dyn_16929 = (function (this$,event){
+var re_com$dmm_tracker$IMouseMoveTracker$_releaseMouseMoves$dyn_22981 = (function (this$,event){
 var x__4463__auto__ = (((this$ == null))?null:this$);
 var m__4464__auto__ = (re_com.dmm_tracker._releaseMouseMoves[goog.typeOf(x__4463__auto__)]);
 if((!((m__4464__auto__ == null)))){
@@ -65,11 +65,11 @@ re_com.dmm_tracker._releaseMouseMoves = (function re_com$dmm_tracker$_releaseMou
 if((((!((this$ == null)))) && ((!((this$.re_com$dmm_tracker$IMouseMoveTracker$_releaseMouseMoves$arity$2 == null)))))){
 return this$.re_com$dmm_tracker$IMouseMoveTracker$_releaseMouseMoves$arity$2(this$,event);
 } else {
-return re_com$dmm_tracker$IMouseMoveTracker$_releaseMouseMoves$dyn_16929.call(null,this$,event);
+return re_com$dmm_tracker$IMouseMoveTracker$_releaseMouseMoves$dyn_22981.call(null,this$,event);
 }
 });
 
-var re_com$dmm_tracker$IMouseMoveTracker$_onMouseMove$dyn_16930 = (function (this$,event){
+var re_com$dmm_tracker$IMouseMoveTracker$_onMouseMove$dyn_22982 = (function (this$,event){
 var x__4463__auto__ = (((this$ == null))?null:this$);
 var m__4464__auto__ = (re_com.dmm_tracker._onMouseMove[goog.typeOf(x__4463__auto__)]);
 if((!((m__4464__auto__ == null)))){
@@ -87,7 +87,7 @@ re_com.dmm_tracker._onMouseMove = (function re_com$dmm_tracker$_onMouseMove(this
 if((((!((this$ == null)))) && ((!((this$.re_com$dmm_tracker$IMouseMoveTracker$_onMouseMove$arity$2 == null)))))){
 return this$.re_com$dmm_tracker$IMouseMoveTracker$_onMouseMove$arity$2(this$,event);
 } else {
-return re_com$dmm_tracker$IMouseMoveTracker$_onMouseMove$dyn_16930.call(null,this$,event);
+return re_com$dmm_tracker$IMouseMoveTracker$_onMouseMove$dyn_22982.call(null,this$,event);
 }
 });
 
@@ -111,12 +111,12 @@ this.y = y;
 var self__ = this;
 var this$__$1 = this;
 if(((cljs.core.not.call(null,self__.eventMoveToken)) && (cljs.core.not.call(null,self__.eventUpToken)))){
-(self__.eventMoveToken = re_com.dmm_tracker.document_event_listener.call(null,"mousemove",(function (p1__16931_SHARP_){
-return re_com.dmm_tracker._onMouseMove.call(null,this$__$1,p1__16931_SHARP_);
+(self__.eventMoveToken = re_com.dmm_tracker.document_event_listener.call(null,"mousemove",(function (p1__22983_SHARP_){
+return re_com.dmm_tracker._onMouseMove.call(null,this$__$1,p1__22983_SHARP_);
 })));
 
-(self__.eventUpToken = re_com.dmm_tracker.document_event_listener.call(null,"mouseup",(function (p1__16932_SHARP_){
-return re_com.dmm_tracker._releaseMouseMoves.call(null,this$__$1,p1__16932_SHARP_);
+(self__.eventUpToken = re_com.dmm_tracker.document_event_listener.call(null,"mouseup",(function (p1__22984_SHARP_){
+return re_com.dmm_tracker._releaseMouseMoves.call(null,this$__$1,p1__22984_SHARP_);
 })));
 } else {
 }

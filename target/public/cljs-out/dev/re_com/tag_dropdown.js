@@ -13,8 +13,8 @@ goog.require('re_com.selection_list');
 goog.require('re_com.close_button');
 goog.require('re_com.popover');
 re_com.tag_dropdown.label_style = (function re_com$tag_dropdown$label_style(var_args){
-var G__21401 = arguments.length;
-switch (G__21401) {
+var G__25629 = arguments.length;
+switch (G__25629) {
 case 2:
 return re_com.tag_dropdown.label_style.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -89,22 +89,22 @@ return cljs.core.List.EMPTY;
 re_com.tag_dropdown.text_tag = (function re_com$tag_dropdown$text_tag(){
 var over_QMARK_ = reagent.core.atom.call(null,false);
 return (function() { 
-var re_com$tag_dropdown$text_tag_$_text_tag_render__delegate = function (p__21403){
-var map__21404 = p__21403;
-var map__21404__$1 = cljs.core.__destructure_map.call(null,map__21404);
-var disabled_QMARK_ = cljs.core.get.call(null,map__21404__$1,new cljs.core.Keyword(null,"disabled?","disabled?",-1523234181));
-var on_unselect = cljs.core.get.call(null,map__21404__$1,new cljs.core.Keyword(null,"on-unselect","on-unselect",279420763));
-var hover_style = cljs.core.get.call(null,map__21404__$1,new cljs.core.Keyword(null,"hover-style","hover-style",976094077));
-var tooltip = cljs.core.get.call(null,map__21404__$1,new cljs.core.Keyword(null,"tooltip","tooltip",-1809677058));
-var attr = cljs.core.get.call(null,map__21404__$1,new cljs.core.Keyword(null,"attr","attr",-604132353));
-var label_fn = cljs.core.get.call(null,map__21404__$1,new cljs.core.Keyword(null,"label-fn","label-fn",-860923263),new cljs.core.Keyword(null,"label","label",1718410804));
-var description_fn = cljs.core.get.call(null,map__21404__$1,new cljs.core.Keyword(null,"description-fn","description-fn",-1507979835));
-var parts = cljs.core.get.call(null,map__21404__$1,new cljs.core.Keyword(null,"parts","parts",849007691));
-var id_fn = cljs.core.get.call(null,map__21404__$1,new cljs.core.Keyword(null,"id-fn","id-fn",316222798),new cljs.core.Keyword(null,"id","id",-1388402092));
-var on_click = cljs.core.get.call(null,map__21404__$1,new cljs.core.Keyword(null,"on-click","on-click",1632826543));
-var style = cljs.core.get.call(null,map__21404__$1,new cljs.core.Keyword(null,"style","style",-496642736));
-var class$ = cljs.core.get.call(null,map__21404__$1,new cljs.core.Keyword(null,"class","class",-2030961996));
-var tag_data = cljs.core.get.call(null,map__21404__$1,new cljs.core.Keyword(null,"tag-data","tag-data",1007525109));
+var re_com$tag_dropdown$text_tag_$_text_tag_render__delegate = function (p__25631){
+var map__25632 = p__25631;
+var map__25632__$1 = cljs.core.__destructure_map.call(null,map__25632);
+var disabled_QMARK_ = cljs.core.get.call(null,map__25632__$1,new cljs.core.Keyword(null,"disabled?","disabled?",-1523234181));
+var on_unselect = cljs.core.get.call(null,map__25632__$1,new cljs.core.Keyword(null,"on-unselect","on-unselect",279420763));
+var hover_style = cljs.core.get.call(null,map__25632__$1,new cljs.core.Keyword(null,"hover-style","hover-style",976094077));
+var tooltip = cljs.core.get.call(null,map__25632__$1,new cljs.core.Keyword(null,"tooltip","tooltip",-1809677058));
+var attr = cljs.core.get.call(null,map__25632__$1,new cljs.core.Keyword(null,"attr","attr",-604132353));
+var label_fn = cljs.core.get.call(null,map__25632__$1,new cljs.core.Keyword(null,"label-fn","label-fn",-860923263),new cljs.core.Keyword(null,"label","label",1718410804));
+var description_fn = cljs.core.get.call(null,map__25632__$1,new cljs.core.Keyword(null,"description-fn","description-fn",-1507979835));
+var parts = cljs.core.get.call(null,map__25632__$1,new cljs.core.Keyword(null,"parts","parts",849007691));
+var id_fn = cljs.core.get.call(null,map__25632__$1,new cljs.core.Keyword(null,"id-fn","id-fn",316222798),new cljs.core.Keyword(null,"id","id",-1388402092));
+var on_click = cljs.core.get.call(null,map__25632__$1,new cljs.core.Keyword(null,"on-click","on-click",1632826543));
+var style = cljs.core.get.call(null,map__25632__$1,new cljs.core.Keyword(null,"style","style",-496642736));
+var class$ = cljs.core.get.call(null,map__25632__$1,new cljs.core.Keyword(null,"class","class",-2030961996));
+var tag_data = cljs.core.get.call(null,map__25632__$1,new cljs.core.Keyword(null,"tag-data","tag-data",1007525109));
 var tag_id = id_fn.call(null,tag_data);
 var tag_id_kw = cljs.core.keyword.call(null,tag_id);
 var clickable_QMARK_ = (((!((on_click == null)))) && (cljs.core.not.call(null,disabled_QMARK_)));
@@ -156,17 +156,17 @@ return null;
 })], null)], null)], null):null)], null)], null),(cljs.core.truth_(tag_description)?new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span","span",1394872991),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"color","color",1011675173),"#586069"], null)], null),tag_description], null):null)], null)], null);
 };
 var re_com$tag_dropdown$text_tag_$_text_tag_render = function (var_args){
-var p__21403 = null;
+var p__25631 = null;
 if (arguments.length > 0) {
-var G__21405__i = 0, G__21405__a = new Array(arguments.length -  0);
-while (G__21405__i < G__21405__a.length) {G__21405__a[G__21405__i] = arguments[G__21405__i + 0]; ++G__21405__i;}
-  p__21403 = new cljs.core.IndexedSeq(G__21405__a,0,null);
+var G__25633__i = 0, G__25633__a = new Array(arguments.length -  0);
+while (G__25633__i < G__25633__a.length) {G__25633__a[G__25633__i] = arguments[G__25633__i + 0]; ++G__25633__i;}
+  p__25631 = new cljs.core.IndexedSeq(G__25633__a,0,null);
 } 
-return re_com$tag_dropdown$text_tag_$_text_tag_render__delegate.call(this,p__21403);};
+return re_com$tag_dropdown$text_tag_$_text_tag_render__delegate.call(this,p__25631);};
 re_com$tag_dropdown$text_tag_$_text_tag_render.cljs$lang$maxFixedArity = 0;
-re_com$tag_dropdown$text_tag_$_text_tag_render.cljs$lang$applyTo = (function (arglist__21406){
-var p__21403 = cljs.core.seq(arglist__21406);
-return re_com$tag_dropdown$text_tag_$_text_tag_render__delegate(p__21403);
+re_com$tag_dropdown$text_tag_$_text_tag_render.cljs$lang$applyTo = (function (arglist__25634){
+var p__25631 = cljs.core.seq(arglist__25634);
+return re_com$tag_dropdown$text_tag_$_text_tag_render__delegate(p__25631);
 });
 re_com$tag_dropdown$text_tag_$_text_tag_render.cljs$core$IFn$_invoke$arity$variadic = re_com$tag_dropdown$text_tag_$_text_tag_render__delegate;
 return re_com$tag_dropdown$text_tag_$_text_tag_render;
@@ -178,14 +178,14 @@ re_com.tag_dropdown.tag_dropdown_parts = ((re_com.config.include_args_desc_QMARK
 re_com.tag_dropdown.tag_dropdown_args_desc = ((re_com.config.include_args_desc_QMARK_)?new cljs.core.PersistentVector(null, 18, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"name","name",1843675177),new cljs.core.Keyword(null,"choices","choices",1385611597),new cljs.core.Keyword(null,"required","required",1807647006),true,new cljs.core.Keyword(null,"type","type",1174270348),"vector of maps | r/atom",new cljs.core.Keyword(null,"validate-fn","validate-fn",1430169944),re_com.validate.vector_of_maps_QMARK_,new cljs.core.Keyword(null,"description","description",-1428560544),new cljs.core.PersistentVector(null, 10, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span","span",1394872991),"Each map represents a choice. Values corresponding to id, label, short label and tag background color are extracted by the functions ",new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"code","code",1586293142),":id"], null),", ",new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"code","code",1586293142),":label-fn"], null)," & ",new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"code","code",1586293142),":short-label-fn"], null)," & ",new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"code","code",1586293142),":background-color"], null),". See below."], null)], null),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"name","name",1843675177),new cljs.core.Keyword(null,"model","model",331153215),new cljs.core.Keyword(null,"required","required",1807647006),true,new cljs.core.Keyword(null,"type","type",1174270348),"a set of ids | r/atom",new cljs.core.Keyword(null,"description","description",-1428560544),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span","span",1394872991),"The set of the ids for currently selected choices. If nil or empty, see ",new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"code","code",1586293142),":placeholder"], null),"."], null)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"name","name",1843675177),new cljs.core.Keyword(null,"placeholder","placeholder",-104873083),new cljs.core.Keyword(null,"required","required",1807647006),false,new cljs.core.Keyword(null,"type","type",1174270348),"string",new cljs.core.Keyword(null,"validate-fn","validate-fn",1430169944),cljs.core.string_QMARK_,new cljs.core.Keyword(null,"description","description",-1428560544),"Background text shown when there's no selection."], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"name","name",1843675177),new cljs.core.Keyword(null,"on-change","on-change",-732046149),new cljs.core.Keyword(null,"required","required",1807647006),true,new cljs.core.Keyword(null,"type","type",1174270348),"id -> nil",new cljs.core.Keyword(null,"validate-fn","validate-fn",1430169944),cljs.core.fn_QMARK_,new cljs.core.Keyword(null,"description","description",-1428560544),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span","span",1394872991),"This function is called whenever the selection changes. Called with one argument, the set of selected ids. See ",new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"code","code",1586293142),":model"], null),"."], null)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"name","name",1843675177),new cljs.core.Keyword(null,"disabled?","disabled?",-1523234181),new cljs.core.Keyword(null,"required","required",1807647006),false,new cljs.core.Keyword(null,"default","default",-1987822328),false,new cljs.core.Keyword(null,"type","type",1174270348),"boolean",new cljs.core.Keyword(null,"description","description",-1428560544),"if true, no user selection is allowed"], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"name","name",1843675177),new cljs.core.Keyword(null,"required?","required?",-872514462),new cljs.core.Keyword(null,"required","required",1807647006),false,new cljs.core.Keyword(null,"default","default",-1987822328),false,new cljs.core.Keyword(null,"type","type",1174270348),"boolean | r/atom",new cljs.core.Keyword(null,"description","description",-1428560544),"when true, at least one item must be selected."], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"name","name",1843675177),new cljs.core.Keyword(null,"unselect-buttons?","unselect-buttons?",-1841823085),new cljs.core.Keyword(null,"required","required",1807647006),false,new cljs.core.Keyword(null,"default","default",-1987822328),false,new cljs.core.Keyword(null,"type","type",1174270348),"boolean",new cljs.core.Keyword(null,"description","description",-1428560544),"When true, \"X\" buttons will be added to the display of selected tags (on the right), allowing the user to directly unselect them."], null),new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword(null,"name","name",1843675177),new cljs.core.Keyword(null,"label-fn","label-fn",-860923263),new cljs.core.Keyword(null,"required","required",1807647006),false,new cljs.core.Keyword(null,"default","default",-1987822328),":label",new cljs.core.Keyword(null,"type","type",1174270348),"map -> hiccup",new cljs.core.Keyword(null,"validate-fn","validate-fn",1430169944),cljs.core.ifn_QMARK_,new cljs.core.Keyword(null,"description","description",-1428560544),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span","span",1394872991),"A function which can turn a choice into a displayable label. Will be called for each element in ",new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"code","code",1586293142),":choices"], null),". Given one argument, a choice map, it returns a string or hiccup."], null)], null),new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword(null,"name","name",1843675177),new cljs.core.Keyword(null,"description-fn","description-fn",-1507979835),new cljs.core.Keyword(null,"required","required",1807647006),false,new cljs.core.Keyword(null,"default","default",-1987822328),":description",new cljs.core.Keyword(null,"type","type",1174270348),"map -> hiccup",new cljs.core.Keyword(null,"validate-fn","validate-fn",1430169944),cljs.core.ifn_QMARK_,new cljs.core.Keyword(null,"description","description",-1428560544),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span","span",1394872991),"A function which can turn a choice into a displayable description. Will be called for each element in ",new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"code","code",1586293142),":choices"], null),". Given one argument, a choice map, it returns a string or hiccup."], null)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"name","name",1843675177),new cljs.core.Keyword(null,"abbrev-fn","abbrev-fn",589483206),new cljs.core.Keyword(null,"required","required",1807647006),false,new cljs.core.Keyword(null,"type","type",1174270348),"choice -> hiccup",new cljs.core.Keyword(null,"validate-fn","validate-fn",1430169944),cljs.core.ifn_QMARK_,new cljs.core.Keyword(null,"description","description",-1428560544),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span","span",1394872991),"A function which can turn a choice into an abbreviated label. Will be called for each element in ",new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"code","code",1586293142),":choices"], null),". Given one argument, a choice map, it returns a string or hiccup."], null)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"name","name",1843675177),new cljs.core.Keyword(null,"abbrev-threshold","abbrev-threshold",-726872663),new cljs.core.Keyword(null,"required","required",1807647006),false,new cljs.core.Keyword(null,"type","type",1174270348),"number",new cljs.core.Keyword(null,"validate-fn","validate-fn",1430169944),cljs.core.number_QMARK_,new cljs.core.Keyword(null,"description","description",-1428560544),new cljs.core.PersistentVector(null, 12, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span","span",1394872991),"The text displayed for selected choices is obtained via either ",new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"code","code",1586293142),":label-fn"], null)," or ",new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"code","code",1586293142),"abbrev-fn"], null),". When the total number of characters displayed is less than this argument then ",new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"code","code",1586293142),":label-fn"], null)," will be used, otherwise ",new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"code","code",1586293142),"abbrev-fn"], null),". You should set this value taking into account the width of this component. If not set, only ",new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"code","code",1586293142),":label-fn"], null)," is used."], null)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"name","name",1843675177),new cljs.core.Keyword(null,"min-width","min-width",1926193728),new cljs.core.Keyword(null,"required","required",1807647006),false,new cljs.core.Keyword(null,"type","type",1174270348),"string",new cljs.core.Keyword(null,"validate-fn","validate-fn",1430169944),cljs.core.string_QMARK_,new cljs.core.Keyword(null,"description","description",-1428560544),new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span","span",1394872991),"the CSS min-width, like \"100px\" or \"20em\". This is the natural display width of the Component. It prevents the width from becoming smaller than the value specified, yet allows growth horizontally if sufficient choices are selected up to ",new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"code","code",1586293142),":max-width"], null)," or unbounded growth if ",new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"code","code",1586293142),":max-width"], null)," is not provided."], null)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"name","name",1843675177),new cljs.core.Keyword(null,"max-width","max-width",-1939924051),new cljs.core.Keyword(null,"required","required",1807647006),false,new cljs.core.Keyword(null,"type","type",1174270348),"string",new cljs.core.Keyword(null,"validate-fn","validate-fn",1430169944),cljs.core.string_QMARK_,new cljs.core.Keyword(null,"description","description",-1428560544),"the CSS max-width, like \"100px\" or \"20em\". It prevents the width from becoming larger than the value specified. If sufficient choices are selected to go beyond the maximum then some choices will be hidden by overflow."], null),new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword(null,"name","name",1843675177),new cljs.core.Keyword(null,"height","height",1025178622),new cljs.core.Keyword(null,"required","required",1807647006),false,new cljs.core.Keyword(null,"default","default",-1987822328),"25px",new cljs.core.Keyword(null,"type","type",1174270348),"string",new cljs.core.Keyword(null,"validate-fn","validate-fn",1430169944),cljs.core.string_QMARK_,new cljs.core.Keyword(null,"description","description",-1428560544),"the specific height of the component"], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"name","name",1843675177),new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.Keyword(null,"required","required",1807647006),false,new cljs.core.Keyword(null,"type","type",1174270348),"map",new cljs.core.Keyword(null,"validate-fn","validate-fn",1430169944),cljs.core.map_QMARK_,new cljs.core.Keyword(null,"description","description",-1428560544),"CSS styles to add or override"], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"name","name",1843675177),new cljs.core.Keyword(null,"parts","parts",849007691),new cljs.core.Keyword(null,"required","required",1807647006),false,new cljs.core.Keyword(null,"type","type",1174270348),"map",new cljs.core.Keyword(null,"validate-fn","validate-fn",1430169944),re_com.validate.parts_QMARK_.call(null,re_com.tag_dropdown.tag_dropdown_parts),new cljs.core.Keyword(null,"description","description",-1428560544),"See Parts section below."], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"name","name",1843675177),new cljs.core.Keyword(null,"src","src",-1651076051),new cljs.core.Keyword(null,"required","required",1807647006),false,new cljs.core.Keyword(null,"type","type",1174270348),"map",new cljs.core.Keyword(null,"validate-fn","validate-fn",1430169944),cljs.core.map_QMARK_,new cljs.core.Keyword(null,"description","description",-1428560544),new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span","span",1394872991),"Used in dev builds to assist with debugging. Source code coordinates map containing keys",new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"code","code",1586293142),":file"], null),"and",new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"code","code",1586293142),":line"], null),". See 'Debugging'."], null)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"name","name",1843675177),new cljs.core.Keyword(null,"debug-as","debug-as",283322354),new cljs.core.Keyword(null,"required","required",1807647006),false,new cljs.core.Keyword(null,"type","type",1174270348),"map",new cljs.core.Keyword(null,"validate-fn","validate-fn",1430169944),cljs.core.map_QMARK_,new cljs.core.Keyword(null,"description","description",-1428560544),new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span","span",1394872991),"Used in dev builds to assist with debugging, when one component is used implement another component, and we want the implementation component to masquerade as the original component in debug output, such as component stacks. A map optionally containing keys",new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"code","code",1586293142),":component"], null),"and",new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"code","code",1586293142),":args"], null),"."], null)], null)], null):null);
 re_com.tag_dropdown.tag_dropdown = (function re_com$tag_dropdown$tag_dropdown(var_args){
 var args__4777__auto__ = [];
-var len__4771__auto___21414 = arguments.length;
-var i__4772__auto___21415 = (0);
+var len__4771__auto___25642 = arguments.length;
+var i__4772__auto___25643 = (0);
 while(true){
-if((i__4772__auto___21415 < len__4771__auto___21414)){
-args__4777__auto__.push((arguments[i__4772__auto___21415]));
+if((i__4772__auto___25643 < len__4771__auto___25642)){
+args__4777__auto__.push((arguments[i__4772__auto___25643]));
 
-var G__21416 = (i__4772__auto___21415 + (1));
-i__4772__auto___21415 = G__21416;
+var G__25644 = (i__4772__auto___25643 + (1));
+i__4772__auto___25643 = G__25644;
 continue;
 } else {
 }
@@ -196,38 +196,38 @@ var argseq__4778__auto__ = ((((0) < args__4777__auto__.length))?(new cljs.core.I
 return re_com.tag_dropdown.tag_dropdown.cljs$core$IFn$_invoke$arity$variadic(argseq__4778__auto__);
 });
 
-(re_com.tag_dropdown.tag_dropdown.cljs$core$IFn$_invoke$arity$variadic = (function (p__21410){
-var map__21411 = p__21410;
-var map__21411__$1 = cljs.core.__destructure_map.call(null,map__21411);
-var args = map__21411__$1;
+(re_com.tag_dropdown.tag_dropdown.cljs$core$IFn$_invoke$arity$variadic = (function (p__25638){
+var map__25639 = p__25638;
+var map__25639__$1 = cljs.core.__destructure_map.call(null,map__25639);
+var args = map__25639__$1;
 var or__4160__auto__ = (((!(goog.DEBUG)))?null:re_com.validate.validate_args.call(null,re_com.validate.extract_arg_data.call(null,re_com.tag_dropdown.tag_dropdown_args_desc),args));
 if(cljs.core.truth_(or__4160__auto__)){
 return or__4160__auto__;
 } else {
 var showing_QMARK_ = reagent.core.atom.call(null,false);
 return (function() { 
-var re_com$tag_dropdown$tag_dropdown_render__delegate = function (p__21412){
-var map__21413 = p__21412;
-var map__21413__$1 = cljs.core.__destructure_map.call(null,map__21413);
-var args__$1 = map__21413__$1;
-var disabled_QMARK_ = cljs.core.get.call(null,map__21413__$1,new cljs.core.Keyword(null,"disabled?","disabled?",-1523234181));
-var on_change = cljs.core.get.call(null,map__21413__$1,new cljs.core.Keyword(null,"on-change","on-change",-732046149));
-var height = cljs.core.get.call(null,map__21413__$1,new cljs.core.Keyword(null,"height","height",1025178622),"25px");
-var model = cljs.core.get.call(null,map__21413__$1,new cljs.core.Keyword(null,"model","model",331153215));
-var min_width = cljs.core.get.call(null,map__21413__$1,new cljs.core.Keyword(null,"min-width","min-width",1926193728));
-var label_fn = cljs.core.get.call(null,map__21413__$1,new cljs.core.Keyword(null,"label-fn","label-fn",-860923263),new cljs.core.Keyword(null,"label","label",1718410804));
-var required_QMARK_ = cljs.core.get.call(null,map__21413__$1,new cljs.core.Keyword(null,"required?","required?",-872514462));
-var description_fn = cljs.core.get.call(null,map__21413__$1,new cljs.core.Keyword(null,"description-fn","description-fn",-1507979835),new cljs.core.Keyword(null,"description","description",-1428560544));
-var placeholder = cljs.core.get.call(null,map__21413__$1,new cljs.core.Keyword(null,"placeholder","placeholder",-104873083));
-var abbrev_fn = cljs.core.get.call(null,map__21413__$1,new cljs.core.Keyword(null,"abbrev-fn","abbrev-fn",589483206));
-var abbrev_threshold = cljs.core.get.call(null,map__21413__$1,new cljs.core.Keyword(null,"abbrev-threshold","abbrev-threshold",-726872663));
-var parts = cljs.core.get.call(null,map__21413__$1,new cljs.core.Keyword(null,"parts","parts",849007691));
-var max_width = cljs.core.get.call(null,map__21413__$1,new cljs.core.Keyword(null,"max-width","max-width",-1939924051));
-var src = cljs.core.get.call(null,map__21413__$1,new cljs.core.Keyword(null,"src","src",-1651076051));
-var choices = cljs.core.get.call(null,map__21413__$1,new cljs.core.Keyword(null,"choices","choices",1385611597));
-var style = cljs.core.get.call(null,map__21413__$1,new cljs.core.Keyword(null,"style","style",-496642736));
-var debug_as = cljs.core.get.call(null,map__21413__$1,new cljs.core.Keyword(null,"debug-as","debug-as",283322354));
-var unselect_buttons_QMARK_ = cljs.core.get.call(null,map__21413__$1,new cljs.core.Keyword(null,"unselect-buttons?","unselect-buttons?",-1841823085));
+var re_com$tag_dropdown$tag_dropdown_render__delegate = function (p__25640){
+var map__25641 = p__25640;
+var map__25641__$1 = cljs.core.__destructure_map.call(null,map__25641);
+var args__$1 = map__25641__$1;
+var disabled_QMARK_ = cljs.core.get.call(null,map__25641__$1,new cljs.core.Keyword(null,"disabled?","disabled?",-1523234181));
+var on_change = cljs.core.get.call(null,map__25641__$1,new cljs.core.Keyword(null,"on-change","on-change",-732046149));
+var height = cljs.core.get.call(null,map__25641__$1,new cljs.core.Keyword(null,"height","height",1025178622),"25px");
+var model = cljs.core.get.call(null,map__25641__$1,new cljs.core.Keyword(null,"model","model",331153215));
+var min_width = cljs.core.get.call(null,map__25641__$1,new cljs.core.Keyword(null,"min-width","min-width",1926193728));
+var label_fn = cljs.core.get.call(null,map__25641__$1,new cljs.core.Keyword(null,"label-fn","label-fn",-860923263),new cljs.core.Keyword(null,"label","label",1718410804));
+var required_QMARK_ = cljs.core.get.call(null,map__25641__$1,new cljs.core.Keyword(null,"required?","required?",-872514462));
+var description_fn = cljs.core.get.call(null,map__25641__$1,new cljs.core.Keyword(null,"description-fn","description-fn",-1507979835),new cljs.core.Keyword(null,"description","description",-1428560544));
+var placeholder = cljs.core.get.call(null,map__25641__$1,new cljs.core.Keyword(null,"placeholder","placeholder",-104873083));
+var abbrev_fn = cljs.core.get.call(null,map__25641__$1,new cljs.core.Keyword(null,"abbrev-fn","abbrev-fn",589483206));
+var abbrev_threshold = cljs.core.get.call(null,map__25641__$1,new cljs.core.Keyword(null,"abbrev-threshold","abbrev-threshold",-726872663));
+var parts = cljs.core.get.call(null,map__25641__$1,new cljs.core.Keyword(null,"parts","parts",849007691));
+var max_width = cljs.core.get.call(null,map__25641__$1,new cljs.core.Keyword(null,"max-width","max-width",-1939924051));
+var src = cljs.core.get.call(null,map__25641__$1,new cljs.core.Keyword(null,"src","src",-1651076051));
+var choices = cljs.core.get.call(null,map__25641__$1,new cljs.core.Keyword(null,"choices","choices",1385611597));
+var style = cljs.core.get.call(null,map__25641__$1,new cljs.core.Keyword(null,"style","style",-496642736));
+var debug_as = cljs.core.get.call(null,map__25641__$1,new cljs.core.Keyword(null,"debug-as","debug-as",283322354));
+var unselect_buttons_QMARK_ = cljs.core.get.call(null,map__25641__$1,new cljs.core.Keyword(null,"unselect-buttons?","unselect-buttons?",-1841823085));
 var or__4160__auto____$1 = (((!(goog.DEBUG)))?null:re_com.validate.validate_args.call(null,re_com.validate.extract_arg_data.call(null,re_com.tag_dropdown.tag_dropdown_args_desc),args__$1));
 if(cljs.core.truth_(or__4160__auto____$1)){
 return or__4160__auto____$1;
@@ -251,8 +251,8 @@ return cljs.core.reset_BANG_.call(null,showing_QMARK_,true);
 }),new cljs.core.Keyword(null,"tooltip","tooltip",-1809677058),"Click to select tags",new cljs.core.Keyword(null,"hover-style","hover-style",976094077),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"background-color","background-color",570434026),"#eee"], null)], null);
 var tag_list_body = new cljs.core.PersistentVector(null, 23, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.selection_list.selection_list,new cljs.core.Keyword(null,"src","src",-1651076051),(((!(goog.DEBUG)))?null:new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"file","file",-1269645878),"/Users/jb/tmp/canasta/target/public/cljs-out/dev/re_com/tag_dropdown.cljs",new cljs.core.Keyword(null,"line","line",212345235),224], null)),new cljs.core.Keyword(null,"disabled?","disabled?",-1523234181),disabled_QMARK___$1,new cljs.core.Keyword(null,"required?","required?",-872514462),required_QMARK___$1,new cljs.core.Keyword(null,"parts","parts",849007691),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"list-group-item","list-group-item",1978708789),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"background-color","background-color",570434026),"#F3F6F7"], null)], null)], null),new cljs.core.Keyword(null,"choices","choices",1385611597),choices__$1,new cljs.core.Keyword(null,"hide-border?","hide-border?",1792698922),true,new cljs.core.Keyword(null,"label-fn","label-fn",-860923263),(function (tag){
 return new cljs.core.PersistentVector(null, 9, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.tag_dropdown.text_tag,new cljs.core.Keyword(null,"label-fn","label-fn",-860923263),label_fn,new cljs.core.Keyword(null,"description-fn","description-fn",-1507979835),description_fn,new cljs.core.Keyword(null,"tag-data","tag-data",1007525109),tag,new cljs.core.Keyword(null,"style","style",-496642736),style], null);
-}),new cljs.core.Keyword(null,"item-renderer","item-renderer",-743065410),re_com.tag_dropdown.as_checked,new cljs.core.Keyword(null,"model","model",331153215),model__$1,new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (p1__21407_SHARP_){
-return on_change.call(null,p1__21407_SHARP_);
+}),new cljs.core.Keyword(null,"item-renderer","item-renderer",-743065410),re_com.tag_dropdown.as_checked,new cljs.core.Keyword(null,"model","model",331153215),model__$1,new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (p1__25635_SHARP_){
+return on_change.call(null,p1__25635_SHARP_);
 }),new cljs.core.Keyword(null,"multi-select?","multi-select?",973156151),true], null);
 var tag_main = new cljs.core.PersistentVector(null, 21, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.box.h_box,new cljs.core.Keyword(null,"src","src",-1651076051),(((!(goog.DEBUG)))?null:new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"file","file",-1269645878),"/Users/jb/tmp/canasta/target/public/cljs-out/dev/re_com/tag_dropdown.cljs",new cljs.core.Keyword(null,"line","line",212345235),241], null)),new cljs.core.Keyword(null,"min-width","min-width",1926193728),min_width,new cljs.core.Keyword(null,"max-width","max-width",-1939924051),max_width,new cljs.core.Keyword(null,"height","height",1025178622),height,new cljs.core.Keyword(null,"align","align",1964212802),new cljs.core.Keyword(null,"center","center",-748944368),new cljs.core.Keyword(null,"padding","padding",1660304693),"0px 6px",new cljs.core.Keyword(null,"class","class",-2030961996),["rc-tag-dropdown ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.get_in.call(null,parts,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"main","main",-2117802661),new cljs.core.Keyword(null,"class","class",-2030961996)], null)))].join(''),new cljs.core.Keyword(null,"style","style",-496642736),cljs.core.merge.call(null,new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword(null,"background-color","background-color",570434026),(cljs.core.truth_(disabled_QMARK___$1)?"#EEE":"white"),new cljs.core.Keyword(null,"color","color",1011675173),"#BBB",new cljs.core.Keyword(null,"border","border",1444987323),"1px solid lightgrey",new cljs.core.Keyword(null,"border-radius","border-radius",419594011),"2px",new cljs.core.Keyword(null,"overflow","overflow",2058931880),"hidden",new cljs.core.Keyword(null,"cursor","cursor",1011937484),(cljs.core.truth_(disabled_QMARK___$1)?"default":"pointer")], null),cljs.core.get_in.call(null,parts,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"main","main",-2117802661),new cljs.core.Keyword(null,"style","style",-496642736)], null))),new cljs.core.Keyword(null,"attr","attr",-604132353),cljs.core.merge.call(null,cljs.core.PersistentArrayMap.EMPTY,((cljs.core.not.call(null,disabled_QMARK___$1))?new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (event){
 cljs.core.reset_BANG_.call(null,showing_QMARK_,true);
@@ -268,8 +268,8 @@ return cljs.core.not.call(null,((cljs.core._EQ_.call(null,(1),cljs.core.count.ca
 } else {
 return and__4149__auto__;
 }
-})())?(function (p1__21408_SHARP_){
-return on_change.call(null,cljs.core.disj.call(null,model__$1,p1__21408_SHARP_));
+})())?(function (p1__25636_SHARP_){
+return on_change.call(null,cljs.core.disj.call(null,model__$1,p1__25636_SHARP_));
 }):null),new cljs.core.Keyword(null,"hover-style","hover-style",976094077),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"opacity","opacity",397153780),"0.8"], null),new cljs.core.Keyword(null,"style","style",-496642736),style,new cljs.core.Keyword(null,"parts","parts",849007691),parts], null);
 } else {
 return null;
@@ -295,17 +295,17 @@ return cljs.core.reset_BANG_.call(null,showing_QMARK_,false);
 }
 };
 var re_com$tag_dropdown$tag_dropdown_render = function (var_args){
-var p__21412 = null;
+var p__25640 = null;
 if (arguments.length > 0) {
-var G__21417__i = 0, G__21417__a = new Array(arguments.length -  0);
-while (G__21417__i < G__21417__a.length) {G__21417__a[G__21417__i] = arguments[G__21417__i + 0]; ++G__21417__i;}
-  p__21412 = new cljs.core.IndexedSeq(G__21417__a,0,null);
+var G__25645__i = 0, G__25645__a = new Array(arguments.length -  0);
+while (G__25645__i < G__25645__a.length) {G__25645__a[G__25645__i] = arguments[G__25645__i + 0]; ++G__25645__i;}
+  p__25640 = new cljs.core.IndexedSeq(G__25645__a,0,null);
 } 
-return re_com$tag_dropdown$tag_dropdown_render__delegate.call(this,p__21412);};
+return re_com$tag_dropdown$tag_dropdown_render__delegate.call(this,p__25640);};
 re_com$tag_dropdown$tag_dropdown_render.cljs$lang$maxFixedArity = 0;
-re_com$tag_dropdown$tag_dropdown_render.cljs$lang$applyTo = (function (arglist__21418){
-var p__21412 = cljs.core.seq(arglist__21418);
-return re_com$tag_dropdown$tag_dropdown_render__delegate(p__21412);
+re_com$tag_dropdown$tag_dropdown_render.cljs$lang$applyTo = (function (arglist__25646){
+var p__25640 = cljs.core.seq(arglist__25646);
+return re_com$tag_dropdown$tag_dropdown_render__delegate(p__25640);
 });
 re_com$tag_dropdown$tag_dropdown_render.cljs$core$IFn$_invoke$arity$variadic = re_com$tag_dropdown$tag_dropdown_render__delegate;
 return re_com$tag_dropdown$tag_dropdown_render;
@@ -317,9 +317,9 @@ return re_com$tag_dropdown$tag_dropdown_render;
 (re_com.tag_dropdown.tag_dropdown.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(re_com.tag_dropdown.tag_dropdown.cljs$lang$applyTo = (function (seq21409){
+(re_com.tag_dropdown.tag_dropdown.cljs$lang$applyTo = (function (seq25637){
 var self__4759__auto__ = this;
-return self__4759__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq21409));
+return self__4759__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq25637));
 }));
 
 

@@ -27,8 +27,8 @@ canasta.spiel.geber_festgelegt_QMARK_ = (function canasta$spiel$geber_festgelegt
 return (!((new cljs.core.Keyword(null,"geber","geber",604746862).cljs$core$IFn$_invoke$arity$1(spiel) == null)));
 });
 canasta.spiel.neues_spiel = (function canasta$spiel$neues_spiel(sp_namen){
-return cljs.core.assoc.call(null,canasta.spiel.__GT_Spiel.call(null),new cljs.core.Keyword(null,"teilnehmer","teilnehmer",-1866934245),cljs.core.mapv.call(null,(function (p1__19605_SHARP_){
-return canasta.spieler.__GT_Spieler.call(null,p1__19605_SHARP_);
+return cljs.core.assoc.call(null,canasta.spiel.__GT_Spiel.call(null),new cljs.core.Keyword(null,"teilnehmer","teilnehmer",-1866934245),cljs.core.mapv.call(null,(function (p1__26338_SHARP_){
+return canasta.spieler.__GT_Spieler.call(null,p1__26338_SHARP_);
 }),sp_namen));
 });
 canasta.spiel.naechster_geber = (function canasta$spiel$naechster_geber(index,anzahl_spieler){
@@ -42,18 +42,18 @@ return (index - (1));
 }
 });
 canasta.spiel.ergaenze_standard_werte_in_resultaten = (function canasta$spiel$ergaenze_standard_werte_in_resultaten(teilnehmer,runde){
-return cljs.core.mapv.call(null,(function (p1__19606_SHARP_){
-if((cljs.core.get.call(null,canasta.spieler.resultate.call(null,p1__19606_SHARP_),runde) == null)){
-return canasta.spieler.null_resultat.call(null,runde,p1__19606_SHARP_);
+return cljs.core.mapv.call(null,(function (p1__26339_SHARP_){
+if((cljs.core.get.call(null,canasta.spieler.resultate.call(null,p1__26339_SHARP_),runde) == null)){
+return canasta.spieler.null_resultat.call(null,runde,p1__26339_SHARP_);
 } else {
-return p1__19606_SHARP_;
+return p1__26339_SHARP_;
 }
 }),teilnehmer);
 });
 canasta.spiel.schliesse_runde_ab = (function canasta$spiel$schliesse_runde_ab(spiel){
 var teiln = canasta.spiel.ergaenze_standard_werte_in_resultaten.call(null,canasta.spiel.teilnehmer.call(null,spiel),canasta.spiel.runde.call(null,spiel));
-var sieger = cljs.core.last.call(null,cljs.core.sort_by.call(null,(function (p1__19607_SHARP_){
-return canasta.spieler.summe.call(null,p1__19607_SHARP_);
+var sieger = cljs.core.last.call(null,cljs.core.sort_by.call(null,(function (p1__26340_SHARP_){
+return canasta.spieler.summe.call(null,p1__26340_SHARP_);
 }),teiln));
 var geber = canasta.spiel.naechster_geber.call(null,canasta.spiel.geber.call(null,spiel),cljs.core.count.call(null,teiln));
 return cljs.core.assoc.call(null,spiel,new cljs.core.Keyword(null,"runde","runde",-1618531444),(canasta.spiel.runde.call(null,spiel) + (1)),new cljs.core.Keyword(null,"geber","geber",604746862),geber,new cljs.core.Keyword(null,"teilnehmer","teilnehmer",-1866934245),teiln,new cljs.core.Keyword(null,"sieger","sieger",-247971207),(((canasta.spieler.summe.call(null,sieger) >= (5000)))?sieger:null),new cljs.core.Keyword(null,"spiel-beendet?","spiel-beendet?",-1758455863),(canasta.spieler.summe.call(null,sieger) >= (5000)));

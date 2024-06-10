@@ -11,25 +11,25 @@ re_com.close_button.close_button_args_desc = ((re_com.config.include_args_desc_Q
 re_com.close_button.close_button = (function re_com$close_button$close_button(){
 var over_QMARK_ = reagent.core.atom.call(null,false);
 return (function() { 
-var re_com$close_button$close_button_$_close_button_render__delegate = function (p__16703){
-var map__16704 = p__16703;
-var map__16704__$1 = cljs.core.__destructure_map.call(null,map__16704);
-var args = map__16704__$1;
-var disabled_QMARK_ = cljs.core.get.call(null,map__16704__$1,new cljs.core.Keyword(null,"disabled?","disabled?",-1523234181));
-var tooltip = cljs.core.get.call(null,map__16704__$1,new cljs.core.Keyword(null,"tooltip","tooltip",-1809677058));
-var attr = cljs.core.get.call(null,map__16704__$1,new cljs.core.Keyword(null,"attr","attr",-604132353));
-var left_offset = cljs.core.get.call(null,map__16704__$1,new cljs.core.Keyword(null,"left-offset","left-offset",-331155643));
-var color = cljs.core.get.call(null,map__16704__$1,new cljs.core.Keyword(null,"color","color",1011675173),"#ccc");
-var font_size = cljs.core.get.call(null,map__16704__$1,new cljs.core.Keyword(null,"font-size","font-size",-1847940346),(16));
-var div_size = cljs.core.get.call(null,map__16704__$1,new cljs.core.Keyword(null,"div-size","div-size",1661625995),(16));
-var parts = cljs.core.get.call(null,map__16704__$1,new cljs.core.Keyword(null,"parts","parts",849007691));
-var src = cljs.core.get.call(null,map__16704__$1,new cljs.core.Keyword(null,"src","src",-1651076051));
-var on_click = cljs.core.get.call(null,map__16704__$1,new cljs.core.Keyword(null,"on-click","on-click",1632826543));
-var style = cljs.core.get.call(null,map__16704__$1,new cljs.core.Keyword(null,"style","style",-496642736));
-var debug_as = cljs.core.get.call(null,map__16704__$1,new cljs.core.Keyword(null,"debug-as","debug-as",283322354));
-var class$ = cljs.core.get.call(null,map__16704__$1,new cljs.core.Keyword(null,"class","class",-2030961996));
-var top_offset = cljs.core.get.call(null,map__16704__$1,new cljs.core.Keyword(null,"top-offset","top-offset",1235816245));
-var hover_color = cljs.core.get.call(null,map__16704__$1,new cljs.core.Keyword(null,"hover-color","hover-color",663962326),"#999");
+var re_com$close_button$close_button_$_close_button_render__delegate = function (p__22702){
+var map__22703 = p__22702;
+var map__22703__$1 = cljs.core.__destructure_map.call(null,map__22703);
+var args = map__22703__$1;
+var disabled_QMARK_ = cljs.core.get.call(null,map__22703__$1,new cljs.core.Keyword(null,"disabled?","disabled?",-1523234181));
+var tooltip = cljs.core.get.call(null,map__22703__$1,new cljs.core.Keyword(null,"tooltip","tooltip",-1809677058));
+var attr = cljs.core.get.call(null,map__22703__$1,new cljs.core.Keyword(null,"attr","attr",-604132353));
+var left_offset = cljs.core.get.call(null,map__22703__$1,new cljs.core.Keyword(null,"left-offset","left-offset",-331155643));
+var color = cljs.core.get.call(null,map__22703__$1,new cljs.core.Keyword(null,"color","color",1011675173),"#ccc");
+var font_size = cljs.core.get.call(null,map__22703__$1,new cljs.core.Keyword(null,"font-size","font-size",-1847940346),(16));
+var div_size = cljs.core.get.call(null,map__22703__$1,new cljs.core.Keyword(null,"div-size","div-size",1661625995),(16));
+var parts = cljs.core.get.call(null,map__22703__$1,new cljs.core.Keyword(null,"parts","parts",849007691));
+var src = cljs.core.get.call(null,map__22703__$1,new cljs.core.Keyword(null,"src","src",-1651076051));
+var on_click = cljs.core.get.call(null,map__22703__$1,new cljs.core.Keyword(null,"on-click","on-click",1632826543));
+var style = cljs.core.get.call(null,map__22703__$1,new cljs.core.Keyword(null,"style","style",-496642736));
+var debug_as = cljs.core.get.call(null,map__22703__$1,new cljs.core.Keyword(null,"debug-as","debug-as",283322354));
+var class$ = cljs.core.get.call(null,map__22703__$1,new cljs.core.Keyword(null,"class","class",-2030961996));
+var top_offset = cljs.core.get.call(null,map__22703__$1,new cljs.core.Keyword(null,"top-offset","top-offset",1235816245));
+var hover_color = cljs.core.get.call(null,map__22703__$1,new cljs.core.Keyword(null,"hover-color","hover-color",663962326),"#999");
 var or__4160__auto__ = (((!(goog.DEBUG)))?null:re_com.validate.validate_args.call(null,re_com.validate.extract_arg_data.call(null,re_com.close_button.close_button_args_desc),args));
 if(cljs.core.truth_(or__4160__auto__)){
 return or__4160__auto__;
@@ -68,17 +68,17 @@ return null;
 }
 };
 var re_com$close_button$close_button_$_close_button_render = function (var_args){
-var p__16703 = null;
+var p__22702 = null;
 if (arguments.length > 0) {
-var G__16705__i = 0, G__16705__a = new Array(arguments.length -  0);
-while (G__16705__i < G__16705__a.length) {G__16705__a[G__16705__i] = arguments[G__16705__i + 0]; ++G__16705__i;}
-  p__16703 = new cljs.core.IndexedSeq(G__16705__a,0,null);
+var G__22704__i = 0, G__22704__a = new Array(arguments.length -  0);
+while (G__22704__i < G__22704__a.length) {G__22704__a[G__22704__i] = arguments[G__22704__i + 0]; ++G__22704__i;}
+  p__22702 = new cljs.core.IndexedSeq(G__22704__a,0,null);
 } 
-return re_com$close_button$close_button_$_close_button_render__delegate.call(this,p__16703);};
+return re_com$close_button$close_button_$_close_button_render__delegate.call(this,p__22702);};
 re_com$close_button$close_button_$_close_button_render.cljs$lang$maxFixedArity = 0;
-re_com$close_button$close_button_$_close_button_render.cljs$lang$applyTo = (function (arglist__16706){
-var p__16703 = cljs.core.seq(arglist__16706);
-return re_com$close_button$close_button_$_close_button_render__delegate(p__16703);
+re_com$close_button$close_button_$_close_button_render.cljs$lang$applyTo = (function (arglist__22705){
+var p__22702 = cljs.core.seq(arglist__22705);
+return re_com$close_button$close_button_$_close_button_render__delegate(p__22702);
 });
 re_com$close_button$close_button_$_close_button_render.cljs$core$IFn$_invoke$arity$variadic = re_com$close_button$close_button_$_close_button_render__delegate;
 return re_com$close_button$close_button_$_close_button_render;

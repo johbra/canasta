@@ -15,14 +15,14 @@ re_com.progress_bar.progress_bar_args_desc = ((re_com.config.include_args_desc_Q
  */
 re_com.progress_bar.progress_bar = (function re_com$progress_bar$progress_bar(var_args){
 var args__4777__auto__ = [];
-var len__4771__auto___21305 = arguments.length;
-var i__4772__auto___21306 = (0);
+var len__4771__auto___25533 = arguments.length;
+var i__4772__auto___25534 = (0);
 while(true){
-if((i__4772__auto___21306 < len__4771__auto___21305)){
-args__4777__auto__.push((arguments[i__4772__auto___21306]));
+if((i__4772__auto___25534 < len__4771__auto___25533)){
+args__4777__auto__.push((arguments[i__4772__auto___25534]));
 
-var G__21307 = (i__4772__auto___21306 + (1));
-i__4772__auto___21306 = G__21307;
+var G__25535 = (i__4772__auto___25534 + (1));
+i__4772__auto___25534 = G__25535;
 continue;
 } else {
 }
@@ -33,20 +33,20 @@ var argseq__4778__auto__ = ((((0) < args__4777__auto__.length))?(new cljs.core.I
 return re_com.progress_bar.progress_bar.cljs$core$IFn$_invoke$arity$variadic(argseq__4778__auto__);
 });
 
-(re_com.progress_bar.progress_bar.cljs$core$IFn$_invoke$arity$variadic = (function (p__21303){
-var map__21304 = p__21303;
-var map__21304__$1 = cljs.core.__destructure_map.call(null,map__21304);
-var args = map__21304__$1;
-var striped_QMARK_ = cljs.core.get.call(null,map__21304__$1,new cljs.core.Keyword(null,"striped?","striped?",-797214979));
-var model = cljs.core.get.call(null,map__21304__$1,new cljs.core.Keyword(null,"model","model",331153215));
-var attr = cljs.core.get.call(null,map__21304__$1,new cljs.core.Keyword(null,"attr","attr",-604132353));
-var bar_class = cljs.core.get.call(null,map__21304__$1,new cljs.core.Keyword(null,"bar-class","bar-class",1668073058));
-var parts = cljs.core.get.call(null,map__21304__$1,new cljs.core.Keyword(null,"parts","parts",849007691));
-var width = cljs.core.get.call(null,map__21304__$1,new cljs.core.Keyword(null,"width","width",-384071477),"100%");
-var src = cljs.core.get.call(null,map__21304__$1,new cljs.core.Keyword(null,"src","src",-1651076051));
-var style = cljs.core.get.call(null,map__21304__$1,new cljs.core.Keyword(null,"style","style",-496642736));
-var debug_as = cljs.core.get.call(null,map__21304__$1,new cljs.core.Keyword(null,"debug-as","debug-as",283322354));
-var class$ = cljs.core.get.call(null,map__21304__$1,new cljs.core.Keyword(null,"class","class",-2030961996));
+(re_com.progress_bar.progress_bar.cljs$core$IFn$_invoke$arity$variadic = (function (p__25531){
+var map__25532 = p__25531;
+var map__25532__$1 = cljs.core.__destructure_map.call(null,map__25532);
+var args = map__25532__$1;
+var striped_QMARK_ = cljs.core.get.call(null,map__25532__$1,new cljs.core.Keyword(null,"striped?","striped?",-797214979));
+var model = cljs.core.get.call(null,map__25532__$1,new cljs.core.Keyword(null,"model","model",331153215));
+var attr = cljs.core.get.call(null,map__25532__$1,new cljs.core.Keyword(null,"attr","attr",-604132353));
+var bar_class = cljs.core.get.call(null,map__25532__$1,new cljs.core.Keyword(null,"bar-class","bar-class",1668073058));
+var parts = cljs.core.get.call(null,map__25532__$1,new cljs.core.Keyword(null,"parts","parts",849007691));
+var width = cljs.core.get.call(null,map__25532__$1,new cljs.core.Keyword(null,"width","width",-384071477),"100%");
+var src = cljs.core.get.call(null,map__25532__$1,new cljs.core.Keyword(null,"src","src",-1651076051));
+var style = cljs.core.get.call(null,map__25532__$1,new cljs.core.Keyword(null,"style","style",-496642736));
+var debug_as = cljs.core.get.call(null,map__25532__$1,new cljs.core.Keyword(null,"debug-as","debug-as",283322354));
+var class$ = cljs.core.get.call(null,map__25532__$1,new cljs.core.Keyword(null,"class","class",-2030961996));
 var or__4160__auto__ = (((!(goog.DEBUG)))?null:re_com.validate.validate_args.call(null,re_com.validate.extract_arg_data.call(null,re_com.progress_bar.progress_bar_args_desc),args));
 if(cljs.core.truth_(or__4160__auto__)){
 return or__4160__auto__;
@@ -65,9 +65,9 @@ return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"co
 (re_com.progress_bar.progress_bar.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(re_com.progress_bar.progress_bar.cljs$lang$applyTo = (function (seq21302){
+(re_com.progress_bar.progress_bar.cljs$lang$applyTo = (function (seq25530){
 var self__4759__auto__ = this;
-return self__4759__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq21302));
+return self__4759__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq25530));
 }));
 
 

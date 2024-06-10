@@ -19,25 +19,25 @@ return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMP
 });
 canasta.views.monatsbilanz_tabelle = (function canasta$views$monatsbilanz_tabelle(){
 var monate = cljs.core.deref.call(null,re_frame.core.subscribe.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"monatsbilanz","monatsbilanz",-863544633)], null)));
-return new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.v_box,new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"12pt"], null),new cljs.core.Keyword(null,"children","children",-940561982),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.gap,new cljs.core.Keyword(null,"size","size",1098693007),"20px"], null),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.h_box,new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"font-weight","font-weight",2085804583),"bold"], null),new cljs.core.Keyword(null,"children","children",-940561982),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.box,new cljs.core.Keyword(null,"size","size",1098693007),"70px",new cljs.core.Keyword(null,"child","child",623967545),"Monat"], null),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.box,new cljs.core.Keyword(null,"size","size",1098693007),"70px",new cljs.core.Keyword(null,"child","child",623967545),"Sieger"], null)], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.v_box,new cljs.core.Keyword(null,"children","children",-940561982),cljs.core.into.call(null,cljs.core.PersistentVector.EMPTY,(function (){var iter__4564__auto__ = (function canasta$views$monatsbilanz_tabelle_$_iter__20376(s__20377){
+return new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.v_box,new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"12pt"], null),new cljs.core.Keyword(null,"children","children",-940561982),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.gap,new cljs.core.Keyword(null,"size","size",1098693007),"20px"], null),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.h_box,new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"font-weight","font-weight",2085804583),"bold"], null),new cljs.core.Keyword(null,"children","children",-940561982),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.box,new cljs.core.Keyword(null,"size","size",1098693007),"70px",new cljs.core.Keyword(null,"child","child",623967545),"Monat"], null),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.box,new cljs.core.Keyword(null,"size","size",1098693007),"70px",new cljs.core.Keyword(null,"child","child",623967545),"Sieger"], null)], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.v_box,new cljs.core.Keyword(null,"children","children",-940561982),cljs.core.into.call(null,cljs.core.PersistentVector.EMPTY,(function (){var iter__4564__auto__ = (function canasta$views$monatsbilanz_tabelle_$_iter__26577(s__26578){
 return (new cljs.core.LazySeq(null,(function (){
-var s__20377__$1 = s__20377;
+var s__26578__$1 = s__26578;
 while(true){
-var temp__5457__auto__ = cljs.core.seq.call(null,s__20377__$1);
+var temp__5457__auto__ = cljs.core.seq.call(null,s__26578__$1);
 if(temp__5457__auto__){
-var s__20377__$2 = temp__5457__auto__;
-if(cljs.core.chunked_seq_QMARK_.call(null,s__20377__$2)){
-var c__4562__auto__ = cljs.core.chunk_first.call(null,s__20377__$2);
+var s__26578__$2 = temp__5457__auto__;
+if(cljs.core.chunked_seq_QMARK_.call(null,s__26578__$2)){
+var c__4562__auto__ = cljs.core.chunk_first.call(null,s__26578__$2);
 var size__4563__auto__ = cljs.core.count.call(null,c__4562__auto__);
-var b__20379 = cljs.core.chunk_buffer.call(null,size__4563__auto__);
-if((function (){var i__20378 = (0);
+var b__26580 = cljs.core.chunk_buffer.call(null,size__4563__auto__);
+if((function (){var i__26579 = (0);
 while(true){
-if((i__20378 < size__4563__auto__)){
-var m = cljs.core._nth.call(null,c__4562__auto__,i__20378);
-cljs.core.chunk_append.call(null,b__20379,new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.h_box,new cljs.core.Keyword(null,"height","height",1025178622),"20px",new cljs.core.Keyword(null,"children","children",-940561982),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.box,new cljs.core.Keyword(null,"size","size",1098693007),"70px",new cljs.core.Keyword(null,"child","child",623967545),canasta.views.monatsnamen.call(null,(cljs.core.key.call(null,m) - (1)))], null),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.box,new cljs.core.Keyword(null,"size","size",1098693007),"70px",new cljs.core.Keyword(null,"child","child",623967545),cljs.core.val.call(null,m)], null)], null)], null));
+if((i__26579 < size__4563__auto__)){
+var m = cljs.core._nth.call(null,c__4562__auto__,i__26579);
+cljs.core.chunk_append.call(null,b__26580,new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.h_box,new cljs.core.Keyword(null,"height","height",1025178622),"20px",new cljs.core.Keyword(null,"children","children",-940561982),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.box,new cljs.core.Keyword(null,"size","size",1098693007),"70px",new cljs.core.Keyword(null,"child","child",623967545),canasta.views.monatsnamen.call(null,(cljs.core.key.call(null,m) - (1)))], null),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.box,new cljs.core.Keyword(null,"size","size",1098693007),"70px",new cljs.core.Keyword(null,"child","child",623967545),cljs.core.val.call(null,m)], null)], null)], null));
 
-var G__20380 = (i__20378 + (1));
-i__20378 = G__20380;
+var G__26581 = (i__26579 + (1));
+i__26579 = G__26581;
 continue;
 } else {
 return true;
@@ -45,13 +45,13 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__20379),canasta$views$monatsbilanz_tabelle_$_iter__20376.call(null,cljs.core.chunk_rest.call(null,s__20377__$2)));
+return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__26580),canasta$views$monatsbilanz_tabelle_$_iter__26577.call(null,cljs.core.chunk_rest.call(null,s__26578__$2)));
 } else {
-return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__20379),null);
+return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__26580),null);
 }
 } else {
-var m = cljs.core.first.call(null,s__20377__$2);
-return cljs.core.cons.call(null,new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.h_box,new cljs.core.Keyword(null,"height","height",1025178622),"20px",new cljs.core.Keyword(null,"children","children",-940561982),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.box,new cljs.core.Keyword(null,"size","size",1098693007),"70px",new cljs.core.Keyword(null,"child","child",623967545),canasta.views.monatsnamen.call(null,(cljs.core.key.call(null,m) - (1)))], null),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.box,new cljs.core.Keyword(null,"size","size",1098693007),"70px",new cljs.core.Keyword(null,"child","child",623967545),cljs.core.val.call(null,m)], null)], null)], null),canasta$views$monatsbilanz_tabelle_$_iter__20376.call(null,cljs.core.rest.call(null,s__20377__$2)));
+var m = cljs.core.first.call(null,s__26578__$2);
+return cljs.core.cons.call(null,new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.h_box,new cljs.core.Keyword(null,"height","height",1025178622),"20px",new cljs.core.Keyword(null,"children","children",-940561982),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.box,new cljs.core.Keyword(null,"size","size",1098693007),"70px",new cljs.core.Keyword(null,"child","child",623967545),canasta.views.monatsnamen.call(null,(cljs.core.key.call(null,m) - (1)))], null),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.box,new cljs.core.Keyword(null,"size","size",1098693007),"70px",new cljs.core.Keyword(null,"child","child",623967545),cljs.core.val.call(null,m)], null)], null)], null),canasta$views$monatsbilanz_tabelle_$_iter__26577.call(null,cljs.core.rest.call(null,s__26578__$2)));
 }
 } else {
 return null;
@@ -117,8 +117,8 @@ canasta.views.ergebnis_eingabe = (function canasta$views$ergebnis_eingabe(spiel)
 var runde = canasta.spiel.runde.call(null,spiel);
 var alle_teilnehmer = canasta.spiel.teilnehmer.call(null,spiel);
 return cljs.core.doall.call(null,cljs.core.mapv.call(null,(function (tln){
-return cljs.core.with_meta(new cljs.core.PersistentVector(null, 15, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.input_text,new cljs.core.Keyword(null,"model","model",331153215),cljs.core.str.cljs$core$IFn$_invoke$arity$1((cljs.core.truth_(cljs.core.get.call(null,canasta.spieler.resultate.call(null,tln),runde))?cljs.core.get.call(null,canasta.spieler.resultate.call(null,tln),runde):"")),new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (p1__20381_SHARP_){
-var v = parseInt(p1__20381_SHARP_);
+return cljs.core.with_meta(new cljs.core.PersistentVector(null, 15, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.input_text,new cljs.core.Keyword(null,"model","model",331153215),cljs.core.str.cljs$core$IFn$_invoke$arity$1((cljs.core.truth_(cljs.core.get.call(null,canasta.spieler.resultate.call(null,tln),runde))?cljs.core.get.call(null,canasta.spieler.resultate.call(null,tln),runde):"")),new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (p1__26582_SHARP_){
+var v = parseInt(p1__26582_SHARP_);
 var index = alle_teilnehmer.indexOf(tln);
 return re_frame.core.dispatch.call(null,new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"resultat","resultat",1627423071),canasta.spieler.neues_resultat.call(null,tln,v,runde),index,runde], null));
 }),new cljs.core.Keyword(null,"change-on-blur?","change-on-blur?",854283925),true,new cljs.core.Keyword(null,"validation-regex","validation-regex",-197064361),/^[-+]?[0-9]*$/,new cljs.core.Keyword(null,"width","width",-384071477),[cljs.core.str.cljs$core$IFn$_invoke$arity$1(canasta.views.spielerbreite),"px"].join(''),new cljs.core.Keyword(null,"attr","attr",-604132353),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),"number"], null),new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"padding-right","padding-right",-1250249681),"2px",new cljs.core.Keyword(null,"background-color","background-color",570434026),"beige"], null)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),tln], null));
@@ -134,8 +134,8 @@ return re_frame.core.dispatch.call(null,new cljs.core.PersistentVector(null, 1, 
 canasta.views.geber_auswahl = (function canasta$views$geber_auswahl(namen){
 return new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.h_box,new cljs.core.Keyword(null,"gap","gap",80255254),"12px",new cljs.core.Keyword(null,"children","children",-940561982),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.label,new cljs.core.Keyword(null,"label","label",1718410804),"Geber festegen!"], null),new cljs.core.PersistentVector(null, 11, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.single_dropdown,new cljs.core.Keyword(null,"width","width",-384071477),"6em",new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"24px"], null),new cljs.core.Keyword(null,"choices","choices",1385611597),cljs.core.cons.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),"?",new cljs.core.Keyword(null,"label","label",1718410804),"?"], null),cljs.core.mapv.call(null,(function (n){
 return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),n,new cljs.core.Keyword(null,"label","label",1718410804),n], null);
-}),namen)),new cljs.core.Keyword(null,"model","model",331153215),"?",new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (p1__20382_SHARP_){
-return re_frame.core.dispatch.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"geber","geber",604746862),namen.indexOf(p1__20382_SHARP_)], null));
+}),namen)),new cljs.core.Keyword(null,"model","model",331153215),"?",new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (p1__26583_SHARP_){
+return re_frame.core.dispatch.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"geber","geber",604746862),namen.indexOf(p1__26583_SHARP_)], null));
 })], null)], null)], null);
 });
 canasta.views.spielablauf = (function canasta$views$spielablauf(namen,historie,monatshistorie,monatsbilanz){
