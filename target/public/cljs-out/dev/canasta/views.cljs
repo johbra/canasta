@@ -215,7 +215,7 @@
                                    (s/spieler-name (sp/sieger spiel)))]))]]]])))))
 
 (defn main-panel []
-  (let [historie @(rf/subscribe [:historie])
+  (let [historie       @(rf/subscribe [:historie])
         monatshistorie @(rf/subscribe [:monatshistorie])
         monatsbilanz   @(rf/subscribe [:monatsbilanz])
         spieler-namen  @(rf/subscribe [:spieler-namen])

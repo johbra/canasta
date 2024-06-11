@@ -144,39 +144,61 @@
  (fn [db [_  geber]] 
    (assoc-in db [:spiel :geber] geber)))
 
+#_(rf/reg-event-db
+   :neues-spiel
+   [re-frame.core/debug]
+   (fn [db [_ _]]
+     (let [_ (println db)
+           laufender-monat (:monat db)
+           neuer-monat?  (or
+                          (> laufender-monat (inc (apply max (keys (:monatsbilanz db)))))
+                          (= laufender-monat 2))
+           neues-jahr? (and (= (inc (apply max (keys (:monatsbilanz db)))) 12)
+                            (= laufender-monat 1)) 
+           monatsbilanz (cond neues-jahr? #_{1 ""}
+                              (assoc (:monatsbilanz db)
+                                     12
+                                     (sp/fuehrende (:monatshistorie db)))
+                              neuer-monat?
+                              (assoc (:monatsbilanz db)
+                                     (dec laufender-monat)
+                                     (sp/fuehrende (:monatshistorie db)))
+                              (= laufender-monat 1) {1 ""}
+                              :else (:monatsbilanz db))
+           monatshistorie (cond neues-jahr?  (m/map-vals (fn [] 0) (:monatshistorie db))
+                                neuer-monat?
+                                (m/map-vals (fn [] 0) (:monatshistorie db))
+                                :else (:monatshistorie db))
+           historie (if neues-jahr? (m/map-vals (fn [] 0) (:historie db))
+                        (:historie db))]
+       (assoc db
+              :monat laufender-monat
+              :monatsbilanz monatsbilanz
+              :monatshistorie monatshistorie
+              :historie historie
+              :spiel (sp/neues-spiel @(rf/subscribe [:spieler-namen]))
+              :jahressieg neues-jahr? ))))
+
 (rf/reg-event-db
  :neues-spiel
  [re-frame.core/debug]
  (fn [db [_ _]]
-   (let [laufender-monat (:monat db)
-         neuer-monat?  (or
-                        (> laufender-monat (inc (apply max (keys (:monatsbilanz db)))))
-                        (= laufender-monat 2))
-         neues-jahr? (and (= (inc (apply max (keys (:monatsbilanz db)))) 12)
-                          (= laufender-monat 1)) 
-         monatsbilanz (cond neues-jahr? #_{1 ""}
-                            (assoc (:monatsbilanz db)
-                                   12
-                                   (sp/fuehrende (:monatshistorie db)))
-                            neuer-monat?
-                            (assoc (:monatsbilanz db)
-                                   (dec laufender-monat)
-                                   (sp/fuehrende (:monatshistorie db)))
-                            (= laufender-monat 1) {1 ""}
-                            :else (:monatsbilanz db))
-         monatshistorie (cond neues-jahr?  (m/map-vals (fn [] 0) (:monatshistorie db))
-                              neuer-monat?
-                              (m/map-vals (fn [] 0) (:monatshistorie db))
-                              :else (:monatshistorie db))
-         historie (if neues-jahr? (m/map-vals (fn [] 0) (:historie db))
-                      (:historie db))]
+   (let [laufender-monat (t/month (l/local-now)) 
+         neuer-monat? (> laufender-monat (inc (apply max (keys (:monatsbilanz db)))))
+         monatsbilanz (if neuer-monat?
+                        (assoc (:monatsbilanz db)
+                               (dec laufender-monat)
+                               (sp/fuehrende (:monatshistorie db)))
+                        (:monatsbilanz db))
+         monatshistorie (if neuer-monat?
+                          (m/map-vals (fn [] 0) (:monatshistorie db))
+                          (:monatshistorie db))] 
      (assoc db
             :monat laufender-monat
             :monatsbilanz monatsbilanz
             :monatshistorie monatshistorie
-            :historie historie
-            :spiel (sp/neues-spiel @(rf/subscribe [:spieler-namen]))
-            :jahressieg neues-jahr? ))))
+            :spiel (sp/neues-spiel @(rf/subscribe [:spieler-namen]))))))
+
 
 (rf/reg-event-db
  :monatsbilanz
