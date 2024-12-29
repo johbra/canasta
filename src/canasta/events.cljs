@@ -97,6 +97,8 @@
               :historie       (data 0)
               :monatshistorie (data 1)
               :monatsbilanz   (data 2)
+              :monat (data 3)
+              :jahr (data 4)
               :loading false)
        :else (assoc db
                     db-key data 
@@ -144,52 +146,20 @@
  (fn [db [_  geber]] 
    (assoc-in db [:spiel :geber] geber)))
 
-#_(rf/reg-event-db
-   :neues-spiel
-   [re-frame.core/debug]
-   (fn [db [_ _]]
-     (let [_ (println db)
-           laufender-monat (:monat db)
-           neuer-monat?  (or
-                          (> laufender-monat (inc (apply max (keys (:monatsbilanz db)))))
-                          (= laufender-monat 2))
-           neues-jahr? (and (= (inc (apply max (keys (:monatsbilanz db)))) 12)
-                            (= laufender-monat 1)) 
-           monatsbilanz (cond neues-jahr? #_{1 ""}
-                              (assoc (:monatsbilanz db)
-                                     12
-                                     (sp/fuehrende (:monatshistorie db)))
-                              neuer-monat?
-                              (assoc (:monatsbilanz db)
-                                     (dec laufender-monat)
-                                     (sp/fuehrende (:monatshistorie db)))
-                              (= laufender-monat 1) {1 ""}
-                              :else (:monatsbilanz db))
-           monatshistorie (cond neues-jahr?  (m/map-vals (fn [] 0) (:monatshistorie db))
-                                neuer-monat?
-                                (m/map-vals (fn [] 0) (:monatshistorie db))
-                                :else (:monatshistorie db))
-           historie (if neues-jahr? (m/map-vals (fn [] 0) (:historie db))
-                        (:historie db))]
-       (assoc db
-              :monat laufender-monat
-              :monatsbilanz monatsbilanz
-              :monatshistorie monatshistorie
-              :historie historie
-              :spiel (sp/neues-spiel @(rf/subscribe [:spieler-namen]))
-              :jahressieg neues-jahr? ))))
+(defn voriger-Monat [monat]
+  (if (= monat 1) 12 (dec monat)))
 
 (rf/reg-event-db
  :neues-spiel
  [re-frame.core/debug]
  (fn [db [_ _]]
    (let [laufender-monat (t/month (l/local-now)) 
-         neuer-monat? (> laufender-monat (inc (apply max (keys (:monatsbilanz db)))))
+         neuer-monat? (not (= laufender-monat @(rf/subscribe [:monat])))
          monatsbilanz (if neuer-monat?
                         (assoc (:monatsbilanz db)
-                               (dec laufender-monat)
+                               (voriger-Monat laufender-monat)
                                (sp/fuehrende (:monatshistorie db)))
-                        (:monatsbilanz db))
+                        (:monatsbilanz db)) 
          monatshistorie (if neuer-monat?
                           (m/map-vals (fn [] 0) (:monatshistorie db))
                           (:monatshistorie db))] 
@@ -204,4 +174,13 @@
  :monatsbilanz
  [re-frame.core/debug]
  (fn [db [_ bilanz]]
-   (assoc db :monatsbilanz bilanz))) 
+   (assoc db :monatsbilanz bilanz)))
+
+(rf/reg-event-db
+ :neues-jahr
+ [re-frame.core/debug]
+ (fn [db [_ ]]
+   (assoc db
+          :historie {"Hannes" 0, "Meike" 0}
+          :jahr (t/year (l/local-now))
+          :monatsbilanz {})))

@@ -31,7 +31,7 @@
                            (second (second monatshistorie)))]]]]]
       [gap :size "10px"]
       [h-box :gap "10px" :children
-       [[box :child [:b jahr #_(t/year (t/date-time 2024 1 1) #_(l/local-now))]]
+       [[box :child [:b jahr]]
         [v-box :children
          [[box :child (str (first (first historie)) ": "
                            (second (first historie)))]
@@ -189,14 +189,23 @@
 (defn spielablauf
   [namen historie monatshistorie monatsbilanz]
   (let [spiel @(rf/subscribe [:spiel])
+        ;; _ (println "Spiel" spiel)
         _ (when (sp/spiel-beendet? spiel) 
-            (rf/dispatch [:spiel-beendet [historie monatshistorie monatsbilanz]]))
-        jahressieg @(rf/subscribe [:jahressieg])
-        ]
+            (rf/dispatch [:spiel-beendet [historie monatshistorie monatsbilanz
+                                          @(rf/subscribe [:monat])
+                                          @(rf/subscribe [:jahr])]]))
+        jahr @(rf/subscribe [:jahr])]
     (when spiel
-      (if jahressieg
-        [box :class "gewinner"
-         :child (str "Jahressieg: " (key (first (frequencies (vals monatsbilanz)))))]
+      (if (> jahr @(rf/subscribe [:jahr])) 
+        [v-box :children
+         [[title :label
+           (str "Jahressieg: " (key (first (frequencies (vals monatsbilanz)))))
+           :level :level1] 
+          [gap :size "15px"]
+          [button
+           :class "btn-primary"
+           :label "Neues Jahr beginnen"
+           :on-click #(rf/dispatch [:neues-jahr])]]]
         (if (not (sp/geber-festgelegt? spiel))
           (geber-auswahl (vec namen))
           [v-box :children

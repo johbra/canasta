@@ -20,7 +20,8 @@
    :historie nil
    :monatshistorie nil
    :monatsbilanz {1 "Meike"}
-   :monat (t/month (l/local-now))
+                                        ;:monat 1 #_(t/month (l/local-now))
+                                        ;:jahr 2025 #_(t/year (l/local-now))
    :loading false
    :spieler-namen nil
    :spiel nil
