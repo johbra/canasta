@@ -194,7 +194,8 @@
             (rf/dispatch [:spiel-beendet [historie monatshistorie monatsbilanz
                                           @(rf/subscribe [:monat])
                                           @(rf/subscribe [:jahr])]]))
-        jahr @(rf/subscribe [:jahr])]
+        jahr (t/year (l/local-now))
+        _ (println jahr)]
     (when spiel
       (if (> jahr @(rf/subscribe [:jahr])) 
         [v-box :children
